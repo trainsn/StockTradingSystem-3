@@ -1,0 +1,20 @@
+[ 2017-04-15T11:00:20+08:00 ] ::1 /stocktradingsystem/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000847s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011122s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005745s ]
+

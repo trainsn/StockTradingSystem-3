@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>股票交易系统——个人中心</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
+    </head>
+
+  <body id="index">
+    <include file="./Application/Home/View/Public/header.html" />
+    <include file="./Application/Home/View/Public/menu.html" />
+   <div class="col-sm-8 col-xs-7">    
+     <gt name="export" value="0"> 
+       <table class=" table table-striped table-bordered">
+       <thead><tr><th style="text-align: center;">证券名称(代码)</th>
+           <th style="text-align: center;">买入/卖出</th>
+           <th style="text-align: center;">委托价格</th>
+           <th style="text-align: center;">委托数量</th>
+           <th style="text-align: center;">委托时间</th>
+           <th style="text-align: center;">成交状态</th>
+           <th style="text-align: center;">操作</th>
+        </tr>
+       </thead>
+       <tbody>
+        <volist id="commission_info" name="commission_info">
+          <tr><td style="text-align: center;vertical-align: middle">{<$commission_info.stockname>}({<$commission_info.stockid>})</td>
+              <td style="text-align: center;vertical-align: middle">{<$commission_info.direction_disp>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$commission_info.commission_price>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$commission_info.commission_account>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$commission_info.time_disp>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$commission_info.state_disp>}</td>
+              <td style="text-align: center;vertical-align: middle"><a href="__URL__/doRevoke/stockid/{<$commission_info.stockid>}">撤销</a></td>
+            </tr>
+        </volist>    
+       </tbody></table>
+      <else/>暂时没有数据
+      </gt>
+   </div>
+ </div>
+ </body>
+ </html>

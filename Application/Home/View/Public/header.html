@@ -1,0 +1,19 @@
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#" style="
+    width: 430px;
+">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.jpg" style="
+    width: 55px;
+">  
+    股票交易个人中心
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+    <li><a><?php echo $_SESSION['username']?>，今天是<?php echo date('Y-m-d', time())?></a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__APP__/Home/Login/logout':history.go(0)" >退出登录</a></li>
+    </ul>
+   </div>
+   </nav>

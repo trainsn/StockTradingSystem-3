@@ -1,0 +1,12 @@
+[ 2017-04-22T09:31:05+08:00 ] ::1 /stocktradingsystem/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000707s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006350s ]
+ERR: 无法加载模块:Index
+
+[ 2017-04-22T10:18:25+08:00 ] ::1 /stocktradingsystem/index.php/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006214s ]
+ERR: 无法加载模块:Index
+

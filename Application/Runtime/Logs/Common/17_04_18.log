@@ -1,0 +1,102 @@
+[ 2017-04-18T15:06:47+08:00 ] ::1 /stocktradingsystem/Public/Css/Home/reg.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008530s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:06:47+08:00 ] ::1 /stocktradingsystem/Public/Css/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009359s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:06:47+08:00 ] ::1 /stocktradingsystem/Public/Images/register.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000728s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006238s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:06:47+08:00 ] ::1 /stocktradingsystem/Public/Images/reset.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000519s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005920s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:08:29+08:00 ] ::1 /stocktradingsystem/Public/Css/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008341s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:08:29+08:00 ] ::1 /stocktradingsystem/Public/Css/Home/reg.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007980s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:08:29+08:00 ] ::1 /stocktradingsystem/Public/Images/register.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000892s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009288s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:08:29+08:00 ] ::1 /stocktradingsystem/Public/Images/reset.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005387s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:27:20+08:00 ] ::1 /stocktradingsystem/Public/Css/Home/reg.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000519s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004940s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:27:23+08:00 ] ::1 /stocktradingsystem/Public/Css/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000805s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008989s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:27:23+08:00 ] ::1 /stocktradingsystem/Public/Css/Home/reg.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000900s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008934s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:27:23+08:00 ] ::1 /stocktradingsystem/Public/Images/register.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000830s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008023s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T15:27:23+08:00 ] ::1 /stocktradingsystem/Public/Images/reset.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009053s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T19:08:45+08:00 ] ::1 /stocktradingsystem/Public/Css/Home/reg.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.010627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017399s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T19:08:45+08:00 ] ::1 /stocktradingsystem/Public/Css/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000765s ]
+INFO: [ app_init ] --END-- [ RunTime:0.044255s ]
+ERR: 无法加载模块:Public
+
+[ 2017-04-18T20:27:05+08:00 ] ::1 /stocktradingsystem/index.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000943s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013224s ]
+ERR: 无法加载模块:Login
+
+[ 2017-04-18T20:27:13+08:00 ] ::1 /stocktradingsystem/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000420s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004092s ]
+ERR: 无法加载模块:Login
+

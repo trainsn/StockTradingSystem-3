@@ -1,0 +1,1269 @@
+[ 2017-04-20T11:35:50+08:00 ] ::1 /stocktradingsystem/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000529s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017598s ]
+
+[ 2017-04-20T11:35:50+08:00 ] ::1 /stocktradingsystem/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000481s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.016511s ]
+
+[ 2017-04-20T11:35:58+08:00 ] ::1 /stocktradingsystem/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000515s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024844s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0571s ]
+NOTIC: [8] Undefined variable: condition C:\xampp\htdocs\StockTradingSystem\Application\Home\Controller\LoginController.class.php 第 14 行.
+SQL: SELECT * FROM `stock_user` LIMIT 1   [ RunTime:0.0248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003796s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006582s ]
+
+[ 2017-04-20T11:35:59+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000538s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006215s ]
+
+[ 2017-04-20T11:35:59+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000485s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001703s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004619s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005938s ]
+
+[ 2017-04-20T11:36:09+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000555s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009956s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002713s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005559s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012538s ]
+
+[ 2017-04-20T11:47:17+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000508s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009896s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003759s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014401s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027334s ]
+
+[ 2017-04-20T11:47:20+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/admin_exit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010211s ]
+ERR: 非法操作:admin_exit
+
+[ 2017-04-20T11:47:40+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/admin_exit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006900s ]
+ERR: 非法操作:admin_exit
+
+[ 2017-04-20T11:47:43+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003652s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008230s ]
+
+[ 2017-04-20T11:47:45+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/admin_exit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000549s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006850s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011176s ]
+ERR: 非法操作:admin_exit
+
+[ 2017-04-20T11:48:28+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003926s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099140s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006484s ]
+
+[ 2017-04-20T11:48:30+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/admin_exit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000822s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023377s ]
+ERR: 非法操作:admin_exit
+
+[ 2017-04-20T11:49:00+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000474s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003729s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006909s ]
+
+[ 2017-04-20T11:49:02+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006674s ]
+ERR: 非法操作:Login
+
+[ 2017-04-20T11:49:16+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003780s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012096s ]
+
+[ 2017-04-20T11:49:18+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000841s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011464s ]
+ERR: 非法操作:logout
+
+[ 2017-04-20T11:58:52+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006652s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003958s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009256s ]
+
+[ 2017-04-20T11:58:54+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006805s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003831s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.052884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055690s ]
+
+[ 2017-04-20T11:58:54+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005490s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006418s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.166895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011494s ]
+
+[ 2017-04-20T11:59:12+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007548s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003753s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007404s ]
+
+[ 2017-04-20T12:01:19+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004969s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008883s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003895s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006904s ]
+
+[ 2017-04-20T12:01:21+08:00 ] ::1 /stocktradingsystem/index.php/Home/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000627s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012793s ]
+
+[ 2017-04-20T12:01:21+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006670s ]
+
+[ 2017-04-20T12:01:21+08:00 ] ::1 /stocktradingsystem/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000514s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004847s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007846s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003551s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006578s ]
+
+[ 2017-04-20T12:01:31+08:00 ] ::1 /stocktradingsystem/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015419s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0188s ]
+NOTIC: [8] Undefined variable: condition C:\xampp\htdocs\StockTradingSystem\Application\Home\Controller\LoginController.class.php 第 14 行.
+SQL: SELECT * FROM `stock_user` LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001967s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006869s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010722s ]
+
+[ 2017-04-20T12:01:32+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006764s ]
+
+[ 2017-04-20T12:01:32+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000524s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007520s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003995s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006613s ]
+
+[ 2017-04-20T12:01:35+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000839s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004207s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007007s ]
+
+[ 2017-04-20T14:14:24+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000521s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001682s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005835s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010392s ]
+
+[ 2017-04-20T14:14:37+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000854s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003644s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010198s ]
+NOTIC: [8] Undefined variable: course_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005849s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007764s ]
+
+[ 2017-04-20T14:19:19+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000658s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001986s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009938s ]
+
+[ 2017-04-20T14:19:41+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/addBuy
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000487s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005962s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009584s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0589s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0104s ]
+SQL: INSERT INTO `stock_commission` (`stockid`,`commission_price`,`direction`,`time`,`commission_account`,`stockholderid`,`state`) VALUES ('000856','8.32','0','1492669181','100','1','2') [ RunTime:0.0706s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001552s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002978s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006546s ]
+
+[ 2017-04-20T14:19:42+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/Index/butStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000512s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006514s ]
+
+[ 2017-04-20T14:19:42+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008414s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003763s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056767s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006294s ]
+
+[ 2017-04-20T14:31:15+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000524s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012188s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_commission`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003743s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108117s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111655s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005956s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006128s ]
+
+[ 2017-04-20T14:39:36+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000518s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012100s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0113s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `userid` = '1'' at line 1
+ [ SQL语句 ] : SELECT * FROM `stock_commission` INNER JOIN stock_stock where stock_stock.stockid = stock_commission.stockid  WHERE `userid` = '1' 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE `userid` = '1'' at line 1
+ [ SQL语句 ] : SELECT * FROM `stock_commission` INNER JOIN stock_stock where stock_stock.stockid = stock_commission.stockid  WHERE `userid` = '1' 
+
+[ 2017-04-20T14:40:25+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007384s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0141s ]
+ERR: 1054:Unknown column 'userid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `userid` = '1' 
+ERR: 1054:Unknown column 'userid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `userid` = '1' 
+
+[ 2017-04-20T14:40:54+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000473s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008398s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0125s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE ( `stockholderid` = null AND `stockholderid` = null AND `stockholderid` = null  )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003945s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009102s ]
+
+[ 2017-04-20T14:41:42+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006485s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0132s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE ( `stockholderid` = null AND `stockholderid` = null AND `stockholderid` = null  )  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003859s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005951s ]
+
+[ 2017-04-20T14:42:46+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008527s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0154s ]
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 1 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 2 C:\xampp\htdocs\StockTradingSystem\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+SQL: SELECT * FROM `stock_commission` WHERE ( `stockholderid` = null AND `stockholderid` = null AND `stockholderid` = null  )  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007367s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003743s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007448s ]
+
+[ 2017-04-20T14:43:42+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000473s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011291s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `stock_commission`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002525s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007839s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009854s ]
+
+[ 2017-04-20T14:44:21+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008583s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005936s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.124711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008624s ]
+
+[ 2017-04-20T14:48:08+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011218s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003802s ]
+NOTIC: [8] Undefined variable: commission_info C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 54 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.098543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007241s ]
+
+[ 2017-04-20T14:48:59+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004987s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006667s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001418s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004577s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006199s ]
+
+[ 2017-04-20T14:49:59+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007511s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004137s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003944s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006686s ]
+
+[ 2017-04-20T14:50:05+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000516s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009852s ]
+ERR: 非法操作:manageCourse
+
+[ 2017-04-20T15:04:25+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000516s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005836s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010551s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001929s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007345s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009243s ]
+
+[ 2017-04-20T15:04:40+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000823s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007358s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0366s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003851s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006888s ]
+
+[ 2017-04-20T15:05:02+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000852s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012202s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0907s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002783s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009375s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.141924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007174s ]
+
+[ 2017-04-20T15:05:07+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000508s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014907s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002656s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006531s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152498s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010705s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009886s ]
+
+[ 2017-04-20T15:08:57+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000484s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004813s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006319s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001267s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004752s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008353s ]
+
+[ 2017-04-20T15:09:09+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006378s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003679s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.053966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008993s ]
+
+[ 2017-04-20T15:09:17+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000552s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008963s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003992s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015485s ]
+
+[ 2017-04-20T15:09:19+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000629s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006504s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003864s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009143s ]
+
+[ 2017-04-20T15:09:20+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000470s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004838s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013015s ]
+
+[ 2017-04-20T15:09:21+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000821s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005851s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004057s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.110683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006283s ]
+
+[ 2017-04-20T15:10:00+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000477s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004320s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006931s ]
+
+[ 2017-04-20T15:10:01+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006832s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006529s ]
+
+[ 2017-04-20T15:10:04+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000848s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006145s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003734s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006374s ]
+
+[ 2017-04-20T15:13:56+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006688s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006165s ]
+
+[ 2017-04-20T15:13:58+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000481s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004516s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065364s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003727s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007031s ]
+
+[ 2017-04-20T15:14:00+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000480s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006647s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1'  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002778s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005886s ]
+NOTIC: [8] Undefined index: course_id C:\xampp\htdocs\StockTradingSystem\Application\Runtime\Cache\Home\e3b1e59baf5293f89a8dc765e79a5eaf.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006748s ]
+
+[ 2017-04-20T15:14:04+08:00 ] ::1 /stocktradingsystem/index.php/Home/Index/manageCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001279s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006359s ]
+ERR: 非法操作:manageCourse
+

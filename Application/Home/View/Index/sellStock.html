@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>股票交易系统——个人中心</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
+    </head>
+
+  <body id="index">
+    <include file="./Application/Home/View/Public/header.html" />
+    <include file="./Application/Home/View/Public/menu.html" />
+   <div class="col-sm-8 col-xs-7">
+    <form class="form-horizontal" action="__URL__/addSell" method="post" name="myform" >
+      <!--<div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">股东代码</label>
+        <div class="col-sm-3 col-lg-3">
+        <select class="form-control" name='suit'>
+           <option value="0">沪A</option>
+           <option value="1">深A</option>
+        </select>
+      </div>
+      </div>-->
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">证券代码</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="stockid">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">卖出价格</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="commission_price">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">卖出数量</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="commission_account">
+      </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-1 col-lg-2 control-label">可用资金</label>
+        <div class="col-sm-3 col-lg-3">
+        <input type="text" class="form-control" name="commission_account" value="{<$bankroll_usable>}" readonly>
+      </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-1 col-sm-5">
+          <input type="submit" class="btn btn-primary" name="submit" value="下单" class="publish" onclick="check()">
+          <input type="reset" class="btn btn-danger" value="清除">
+        </div>
+      </div>
+    </form>
+   </div>
+ </div>
+ </body>
+ </html>

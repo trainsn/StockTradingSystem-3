@@ -1,0 +1,18 @@
+[ 2017-04-20T11:58:56+08:00 ] ::1 /stocktradingsystem/index.php/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006030s ]
+ERR: 无法加载模块:Logout
+
+[ 2017-04-20T11:59:10+08:00 ] ::1 /stocktradingsystem/index.php/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000511s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004912s ]
+ERR: 无法加载模块:Logout
+
+[ 2017-04-20T11:59:14+08:00 ] ::1 /stocktradingsystem/index.php/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000472s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004969s ]
+ERR: 无法加载模块:Login
+
