@@ -1,0 +1,138 @@
+[ 2017-05-02T15:31:35+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000490s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005117s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:32:12+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000472s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004869s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:32:45+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000578s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005173s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:32:48+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000710s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006563s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:32:59+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005825s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:02+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000871s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010613s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:04+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000870s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009559s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:07+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000778s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012117s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:09+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001658s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008002s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:11+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007392s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:24+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001786s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018814s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:27+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005712s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018483s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:28+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008700s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:34+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005599s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:37+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000475s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004845s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:53+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000798s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010797s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:33:57+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000494s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007159s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:34:13+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000839s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011726s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:34:16+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000518s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005311s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:34:18+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000515s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005206s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:34:20+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000851s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016560s ]
+ERR: 无法加载模块:Public
+
+[ 2017-05-02T15:47:49+08:00 ] ::1 /stocktradingsystem-3/i
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000750s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006677s ]
+ERR: 无法加载模块:I
+
+[ 2017-05-02T15:48:17+08:00 ] ::1 /stocktradingsystem-3/Public/logo2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000984s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013294s ]
+ERR: 无法加载模块:Public
+

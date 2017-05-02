@@ -3,13 +3,13 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<title>股票交易系统</title>
-        <link rel="stylesheet" href="/StockTradingSystem-3/Public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">
 	</head>
 	<body>
 		<div class="panel panel-primary col-md-offset-2 col-xs-10 col-md-8" style="margin-top: 5%;">
 		<div class="panel-heading">用户注册</div>
 		<div class="panel-body">
-		<form action='/StockTradingSystem-3/index.php/Home/Register/doReg' class="form-horizontal" role="form" method="post" name='myForm' >
+		<form action='/stocktradingsystem-3/index.php/Home/Register/doReg' class="form-horizontal" role="form" method="post" name='myForm' >
         <div class="form-group">
           <label class="control-label col-sm-2">用户名</label>
           <div class="col-sm-9">

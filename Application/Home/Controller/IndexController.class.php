@@ -6,8 +6,18 @@ class IndexController extends Controller {
 		header("Content-type:text/html;charset=utf-8");
 		if(!isset($_SESSION['username']) || $_SESSION['username']==''){
 				$this->redirect('Login/login');
+				//$this->error('您还没有登录', U('Login/login'));
+		}else {
+			$personalAccount = M('personal_stock_account');
+			$condition['userid'] = $_SESSION['userid'];
+			$personalAccount_info  = $personalAccount->where($condition)->find();
+			if (!$personalAccount_info){
+				session_destroy();
+				$this->error('请首先创建证券账户', U('Login/login'));
 			}
+		}
 	}
+
 	function index(){
 		$this->redirect('buyStock');
 	}
@@ -46,7 +56,7 @@ class IndexController extends Controller {
 		$data['stockid'] = $_POST['stockid'];
 		$data['commission_price'] = $_POST['commission_price'];
 		$data['direction'] = '0';
-		$data['time'] = time();
+		$data['commission_time'] = time();
 		$data['commission_account'] =  $_POST['commission_account'];
 		$data['stockholderid'] = $sh['stockholderid'];
 		$data['state'] = '2';
@@ -66,7 +76,7 @@ class IndexController extends Controller {
 		$data['stockid'] = $_POST['stockid'];
 		$data['commission_price'] = $_POST['commission_price'];
 		$data['direction'] = '1';
-		$data['time'] = time();
+		$data['commission_time'] = time();
 		$data['commission_account'] =  $_POST['commission_account'];
 		$data['stockholderid'] = $sh['stockholderid'];
 		$data['state'] = '2';
@@ -120,10 +130,10 @@ class IndexController extends Controller {
 	}
 	
 	function doRevoke(){
-		$stockid = $_GET['stockid'];
+		$commissionid = $_GET['commissionid'];
 		
 		$commission = M('commission');
-		$condition['stockid'] = $stockid;
+		$condition['commissionid'] = $commissionid;
 		if (!$commission->where($condition)->delete()){
 			$this->error('撤单失败');
 		}
