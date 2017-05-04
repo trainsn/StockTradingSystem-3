@@ -2,17 +2,17 @@
 <html lang="en">
 <script type="text/javascript">
     window.onload=function(){
-          document.myForm.userid.focus();
+          document.forms["myForm"].username.focus();
     }
     function checkForm(){
-          if(document.myForm.userid.value==""){
+          if(document.forms["myForm"].username.value==""){
                alert('ID不能为空！！');
-               document.myForm.userid.focus();
+               document.forms["myForm"].username.focus();
                return false;
           }
-          if(document.myForm.password.value==""){
+          if(document.forms["myForm"].password.value==""){
                alert('密码不能为空！！');
-               document.myForm.password.focus();
+               document.forms["myForm"].password.focus();
                return false;
           }
     }
