@@ -88,7 +88,7 @@ create table stock_deal
 	out_commission int not null, #卖方合同编号
 	primary key (dealid),
 	foreign key (in_commission) references stock_commission(commissionid),
-	foreign key (in_commission) references stock_commission(commissionid)
+	foreign key (out_commission) references stock_commission(commissionid)
 )DEFAULT CHARSET=utf8;
 
 
