@@ -53,7 +53,7 @@
             //密码长度在8个字符到16个字符，由字母、数字和"_"组成
             var passwordRegex=/^[0-9A-Za-z_]\w{7,15}$/;
             if(!passwordRegex.test(password)){
-                document.getElementById("passwordInfo").innerHTML="密码长度必须在8个字符到16个字符之间";
+                document.getElementById("passwordInfo").innerHTML="密码必须由在8个字符到16个字符之间的字母或数字组成";
                 return false;
             }else{
                 document.getElementById("passwordInfo").innerHTML="";

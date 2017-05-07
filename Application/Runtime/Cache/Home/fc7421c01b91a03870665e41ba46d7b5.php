@@ -15,7 +15,7 @@
     <a class="navbar-brand" href="#" style="
     width: 430px;
 ">
-        <img alt="Brand" class="col-sm-2 col-xs-3" src="/stocktradingsystem-3/Public/logo2.jpg" style="
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="/stocktradingsystem-3/Public/logo2.png" style="
     width: 55px;
 ">  
     股票交易个人中心
