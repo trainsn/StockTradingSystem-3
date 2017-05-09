@@ -1,12 +1,21 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>股票交易系统——个人中心</title>
-        <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">  
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/sidebar-menu.css">
-    </head>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>股票交易系统——个人中心</title>
+    <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/sidebar-menu.css">  
+
+    <style type="text/css">
+            .warning{
+                padding: 5px;
+                color: #A0A0A0;
+            }
+    </style> 
+</head>
 
   <body id="index">
         <nav class="navbar navbar-default">
@@ -66,8 +75,11 @@
   <script>
     $.sidebarMenu($('.sidebar-menu'))
   </script>
-   <div class="col-sm-8 col-xs-7">
-    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addBuy" method="post" name="myform" >
+    <table width="800px" class="table-bordered">
+    <tr>
+    <td width="550px">
+   <div class="col-sm-12" style="boder:3px;">
+    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addBuy" method="post" name="myform" id="myform" onsubmit="return Validate();">
       <!--<div class="form-group">
         <label class="col-sm-1 col-lg-2 control-label">股东代码</label>
         <div class="col-sm-3 col-lg-3">
@@ -78,36 +90,236 @@
       </div>
       </div>-->
       <div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">证券代码</label>
-        <div class="col-sm-3 col-lg-3">
-        <input type="text" class="form-control" name="stockid">
-      </div>
-      </div>
-      <div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">买入价格</label>
-        <div class="col-sm-3 col-lg-3">
-        <input type="text" class="form-control" name="commission_price">
-      </div>
+        <label class="col-sm-3 col-lg-2 control-label">证券代码</label>
+        <div class="col-sm-6 col-lg-6">
+        <input type="text" class="form-control" name="stockid" onblur="CheckStockid(this.value)">
+        </div>
+        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <p id="stockidInfo"></p>
+        </div>
       </div>
       <div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">买入数量</label>
-        <div class="col-sm-3 col-lg-3">
-        <input type="text" class="form-control" name="commission_account">
-      </div>
+        <label class="col-sm-3 col-lg-2 control-label">买入价格</label>
+        <div class="col-sm-6 col-lg-6">
+        <input type="text" class="form-control" name="commission_price"  onblur="CheckPrice(this.value)">
+        </div>
+        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <p id="priceInfo"></p>
+        </div>
       </div>
       <div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">可用资金</label>
-        <div class="col-sm-3 col-lg-3">
-        <input type="text" class="form-control" value="<?php echo ($bankroll_usable); ?>" readonly>
+        <label class="col-sm-3 col-lg-2 control-label">买入数量</label>
+        <div class="col-sm-6 col-lg-6">
+        <input type="text" class="form-control" name="commission_account" onblur="CheckAccount(this.value)">
+        </div>
+        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <p id="accountInfo"></p>
+        </div>
       </div>
+      <div class="form-group">
+        <label class="col-sm-3 col-lg-2 control-label">可用资金</label>
+        <div class="col-sm-6 col-lg-6">
+        <input type="text" class="form-control" name="bankroll_usable" value="<?php echo ($bankroll_usable); ?>" readonly>
+        </div>
+        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <p id="bankrollInfo"></p>
+        </div>
       </div>
       <div class="form-group">
         <div class="col-sm-offset-1 col-sm-5">
-          <input type="submit" class="btn btn-primary" name="submit" value="下单" class="publish" onclick="check()">
+          <input type="submit" class="btn btn-primary" name="submit" value="下单" class="publish">
           <input type="reset" class="btn btn-danger" value="清除">
         </div>
       </div>
     </form>
    </div>
+   </td>
+ <td width="250px">
+    <table class="table table-condensed table-striped" style="margin-bottom:0">
+    <caption style="text-align:center">行情</caption>
+      <tr align="center">
+        <td>卖5</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>卖4</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>卖3</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>卖2</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>卖1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>买1</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>买2</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>买3</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>买4</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr align="center">
+        <td>买5</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+ </td>
+ </tr>
+ </table>
+  
+  <script type="text/javascript">
+    function CheckStockid(value)
+    {
+      var regex = /^[0-9A-Za-z]+$/; //只包含数字和字母
+      if (value.match(regex)) {
+        document.getElementById('stockidInfo').innerHTML=''; 
+        return true; 
+      } 
+      else if(value == ''){ 
+        document.getElementById('stockidInfo').innerHTML="证券代码不能为空";
+        return false; 
+      } 
+      else{
+        document.getElementById('stockidInfo').innerHTML="请输入正确的证券代码";
+        return false;
+      }
+    }
+
+    function CheckPrice(value)
+    {
+      var regexPrice =  /^[1-9]\d*(\.\d+)?$/;//正数(整数+小数)  非负数:/^[+]{0,1}(\d+)$|^[+]{0,1}(\d+\.\d+)$/
+      var price;
+
+      var regexAccount = /^[1-9]\d*00$/;//100的正整数倍
+      var accountValue = myform.commission_account.value; //or:document.getElementById('').value; getElementByName('')[0].value
+      var account;
+
+      var regexBankroll = /^[+]{0,1}(\d+)$|^[+]{0,1}(\d+\.\d+)$/;
+      var bankrollValue = myform.bankroll_usable.value;
+
+      if (value.match(regexPrice)) { 
+        if(accountValue.match(regexAccount) && bankrollValue.match(regexBankroll)){
+          account = parseInt(accountValue,10);
+          price = parseInt(value,10);
+          if(price * account <= parseInt(bankrollValue,10)){
+            document.getElementById('priceInfo').innerHTML='';
+            return true;
+          }
+          else{
+            document.getElementById('priceInfo').innerHTML="总价超过可用资金";
+            return false;
+          }
+        }
+        else{
+          document.getElementById('priceInfo').innerHTML='';
+          return true; 
+        } 
+      } 
+      else if(value == ''){
+        document.getElementById('priceInfo').innerHTML="买入价格不能为空";
+        return false; 
+      }
+      else{
+        document.getElementById('priceInfo').innerHTML="买入价格需要为大于0的数字";
+        return false;
+      }
+    }
+
+    function CheckAccount(value)
+    {
+      var regexAccount = /^[1-9]\d*00$/;//100的正整数倍
+      var account;
+
+      var regexPrice =  /^[1-9]\d*(\.\d+)?$/;//正数(整数+小数)
+      var priceValue = myform.commission_price.value;
+      var price;
+
+      var regexBankroll = /^[+]{0,1}(\d+)$|^[+]{0,1}(\d+\.\d+)$/;
+      var bankrollValue = myform.bankroll_usable.value;
+
+      if (value.match(regexAccount)) { 
+        if(priceValue.match(regexPrice) && bankrollValue.match(regexBankroll)){
+          price = parseInt(priceValue,10);
+          account = parseInt(value,10);
+          if(price * account <= parseInt(bankrollValue,10)){
+            document.getElementById('accountInfo').innerHTML='';
+            return true;
+          }
+          else{
+            document.getElementById('accountInfo').innerHTML="总价超过可用资金";
+            return false;
+          }
+        }
+        else{
+          document.getElementById('accountInfo').innerHTML='';
+          return true; 
+        }
+      } 
+      else if(value == ''){
+        document.getElementById('accountInfo').innerHTML="买入数量不能为空";
+        return false; 
+      }
+      else{
+        document.getElementById('accountInfo').innerHTML="买进时不能以碎股进行委托，最小单位是1手(100股)";
+        return false;
+      }
+    }
+
+     function CheckBankroll(value)
+    {
+      var regex = /^[+]{0,1}(\d+)$|^[+]{0,1}(\d+\.\d+)$/;
+      if (value.match(regex)) {
+        document.getElementById('bankrollInfo').innerHTML=''; 
+        return true; 
+      } 
+      else if(value == ''){ 
+        document.getElementById('bankrollInfo').innerHTML="您还没有资金账户，请先开户";
+        return false; 
+      } 
+      else{
+        document.getElementById('bankrollInfo').innerHTML="客户端错误";
+        return false;
+      }
+    }    
+
+    function Validate()
+    {
+      var checkStockid = CheckStockid(myform.stockid.value);
+      var checkPrice = CheckPrice(myform.commission_price.value);
+      var checkAccount = CheckAccount(myform.commission_account.value);
+      var checkBankroll = CheckBankroll(myform.bankroll_usable.value);
+      
+      if(checkStockid==true && checkPrice==true && checkAccount==true && checkBankroll==true)
+        return true;
+      else
+        return false;
+    }
+  </script>
+
  </body>
  </html>

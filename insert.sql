@@ -12,7 +12,7 @@ insert into stock_stockholder(stockholderid, userid)
 	values(2, 2);
 
 insert into stock_hold_stock_info
-	values(1, '000856', 1000, 1000, 10, 2);
+	values(1, '000856', 1000, 1000, 10);
 
 insert into stock_deal
 	values(1,'000856',10.2, 1492772166, 100, 1020, 8, 6);

@@ -46,12 +46,27 @@ class IndexController extends Controller {
 		$stock = M('stock');
 		$condition['stockid'] = $_POST['stockid'];
 		if (!$stock->where($condition)->find()){
-			$this->error("请输入正确的股票代码");
+			$this->error("委托失败，不存在该股票代码");
 		}
+
+		if (empty($_POST['commission_price']))
+			$this->error('委托金额不能为空');
+		if (empty($_POST['commission_account']))
+			$this->error('委托数量不能为空');
 
 		$stockholder = M('stockholder');
 		$condition['userid'] =  $_SESSION['userid'];
 		$sh = $stockholder->where($condition)->find();
+
+		$personalAccount = M('personal_stock_account');
+		$condition_personal['userid'] = $_SESSION['userid'];
+		$personalAccount_info  = $personalAccount->where($condition_personal)->find();
+
+		if ( $_POST['commission_account'] % 100 != 0){
+			$this->error('买进时不能以碎股进行委托，最小单位是1手(100股)');
+		}else if ($_POST['commission_account'] * $_POST['commission_price'] > $personalAccount_info['bankroll_usable']){
+			$this->error('总价超过可用资金');
+		}
 
 		$data['stockid'] = $_POST['stockid'];
 		$data['commission_price'] = $_POST['commission_price'];
@@ -69,9 +84,29 @@ class IndexController extends Controller {
 	}
 
 	function addSell(){
+		$stock = M('stock');
+		$condition_stock['stockid'] = $_POST['stockid'];
+		if (!$stock->where($condition_stock)->find()){
+			$this->error("委托失败，不存在该股票代码");
+		}
+
+		if (empty($_POST['commission_price']))
+			$this->error('委托金额不能为空');
+		if (empty($_POST['commission_account']))
+			$this->error('委托数量不能为空');
+
 		$stockholder = M('stockholder');
 		$condition['userid'] =  $_SESSION['userid'];
 		$sh = $stockholder->where($condition)->find();
+
+		$hold = M('hold_stock_info');
+		$condition_hold['stockholderid'] = $sh['stockholderid'];
+		$hold_info = $hold->join('stock_stock')->where($condition_hold)->find();
+
+		//var_dump($hold_info);
+		if ($hold_info['amount_usable'] <  $_POST['commission_account']){
+			$this->error('卖出数量超出最大可卖数');
+		}
 
 		$data['stockid'] = $_POST['stockid'];
 		$data['commission_price'] = $_POST['commission_price'];
@@ -244,7 +279,7 @@ class IndexController extends Controller {
 
 			$deal_info[$i]['time_disp'] = date("Y-m-d H:i:s",$deal_info[$i]['deal_time']);
 		}
-
+		
 		$this->assign('export',count($deal_info));
 		$this->assign('deal_info',$deal_info);
 		$this->display();

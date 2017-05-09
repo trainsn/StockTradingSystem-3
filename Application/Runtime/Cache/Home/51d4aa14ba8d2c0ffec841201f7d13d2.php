@@ -66,8 +66,61 @@
   <script>
     $.sidebarMenu($('.sidebar-menu'))
   </script>
-   <div class="col-sm-8 col-xs-7">    
-     <?php if(($export) > "0"): ?><table class=" table table-striped table-bordered">
+  
+    <div class="col-sm-8 col-xs-7">    
+     <?php if(($export) > "0"): ?><table class="table" style="margin:0;">
+      <tr>
+      <!--<td style="text-align: center;vertical-align: middle">
+        <div style="height:34px; padding:9px;">
+        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">按时间查询</p>
+        </div>
+      </td>-->
+      <td style="text-align: center;vertical-align: middle">
+        <div style="height:34px; padding:9px;">
+        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">自</p>
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="date" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_date"/>
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_time" value="00:00:01" />
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div style="height:34px; padding:9px;">
+        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">至</p>
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="date" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_date"/>
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_time" value="23:59:59"/>
+        </div>
+      </td>
+      <td style="text-align: center;vertical-align: middle">
+      <div>
+          <input type="button" class="btn btn-primary" name="search" value="查询" onclick="Search();">
+        </div>
+      </td>
+      </tr>
+       <tr>
+      <td colspan="8" style="height:20px; padding-top:1px;padding-bottom:0;">
+      <div>
+        <p id="searchInfo" style="font-size:16px; font-family:'微软雅黑';color:red">&nbsp;</p>
+        </div>
+      </td>
+      </tr>
+    </table>
+
+    <table class=" table table-striped table-bordered">
        <thead><tr><th style="text-align: center;">证券名称(代码)</th>
            <th style="text-align: center;">买入/卖出</th>
            <th style="text-align: center;">成交价格</th>
@@ -76,17 +129,111 @@
            <th style="text-align: center;">成交时间</th>
         </tr>
        </thead>
-       <tbody>
-        <?php if(is_array($deal_info)): $i = 0; $__LIST__ = $deal_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$deal_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["stockname"]); ?>(<?php echo ($deal_info["stockid"]); ?>)</td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["operation"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["deal_price"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["dealed_amount"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["dealed_value"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["time_disp"]); ?></td>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>    
-       </tbody></table>
-      <?php else: ?>暂时没有数据<?php endif; ?>
+       <tbody id="myTableBody">
+       </tbody>
+    </table>
+    <?php else: ?>暂时没有数据<?php endif; ?>
+
    </div>
- </div>
+  </div>
+
+  <script type="text/javascript">
+  function GetCurrentDate()
+  {
+    var currentDate = new Date();
+    var outStr = "";
+    var month,date;
+
+    outStr = outStr+currentDate.getFullYear();//获取完整的年份(4位,1970-)
+
+    month = 1+currentDate.getMonth();//获取当前月份(gatMonth得到的是0-11,0代表1月)
+    if(month<10)
+      outStr = outStr+"-"+"0"+month;
+    else
+      outStr = outStr+"-"+month; 
+
+    date = currentDate.getDate(); //获取当前日(1-31)
+    if(date<10)
+      outStr = outStr+"-"+"0"+date;
+    else
+      outStr = outStr+"-"+date; 
+
+    document.getElementById("start_date").value = outStr;
+    document.getElementById("end_date").value = outStr;
+  }
+
+    var arr = new Array();
+    var arrLen = 0;
+    arr["stock"] = new Array();
+    arr["operation"] = new Array();
+    arr["price"] = new Array();
+    arr["amount"] = new Array();
+    arr["value"] = new Array();
+    arr["time"] = new Array();
+
+    <?php if(is_array($deal_info)): $i = 0; $__LIST__ = $deal_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$deal_info): $mod = ($i % 2 );++$i;?>arr["stock"].push("<?php echo ($deal_info["stockname"]); ?>(<?php echo ($deal_info["stockid"]); ?>)");
+      arr["operation"].push("<?php echo ($deal_info["operation"]); ?>");
+      arr["price"].push("<?php echo ($deal_info["deal_price"]); ?>");
+      arr["amount"].push("<?php echo ($deal_info["dealed_amount"]); ?>");
+      arr["value"].push("<?php echo ($deal_info["dealed_value"]); ?>");
+      arr["time"].push("<?php echo ($deal_info["time_disp"]); ?>");
+      arrLen = arrLen+1;<?php endforeach; endif; else: echo "" ;endif; ?>
+
+  function Search()
+  {
+    var strStart = document.getElementById("start_date").value+" "+document.getElementById("start_time").value;
+    var timestampStart = Date.parse(new Date(strStart))/1000;//获取时间戳(以s为单位)
+    var strEnd = document.getElementById("end_date").value+" "+document.getElementById("end_time").value;
+    var timestampEnd = Date.parse(new Date(strEnd))/1000;//获取时间戳(以s为单位)
+
+    if(timestampStart > timestampEnd)
+    {
+      document.getElementById("searchInfo").innerHTML = "查询起始时间需早于截止时间";
+      return false;
+    }
+
+    var outHTML = "";
+    var time;
+
+    for (var i = 0; i < arrLen; i++) 
+    {
+      time = Date.parse(new Date(arr["time"][i]))/1000;
+      if(time >= timestampStart && time <= timestampEnd)
+      {
+        outHTML = outHTML + "<tr>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["price"][i]+"</td>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["amount"][i]+"</td>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["value"][i]+"</td>";
+        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
+        outHTML = outHTML + "</tr>";
+      }
+    }
+    document.getElementById("myTableBody").innerHTML = outHTML;
+    document.getElementById("searchInfo").innerHTML = "&nbsp;";
+    return true;
+  }
+
+
+  window.onload=function(){
+    GetCurrentDate();
+
+    var outHTML = "";
+    for (var i = 0; i < arrLen; i++) 
+    {
+      outHTML = outHTML + "<tr>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["price"][i]+"</td>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["amount"][i]+"</td>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["value"][i]+"</td>";
+      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
+      outHTML = outHTML + "</tr>";
+    }
+    document.getElementById("myTableBody").innerHTML = outHTML;
+  } 
+
+  </script>
  </body>
  </html>
