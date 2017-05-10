@@ -1,0 +1,82 @@
+[ 2017-05-10T14:38:05+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038528s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000408s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.287089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.288233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.078475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.079395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.029660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031266s ]
+
+[ 2017-05-10T20:11:52+08:00 ] ::1 /stocktradingsystem-3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000538s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008122s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0460s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+
+[ 2017-05-10T20:11:52+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000493s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013992s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0607s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001814s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.125538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.095454s ]
+
+[ 2017-05-10T20:12:03+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showHoldInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017787s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0752s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_hold_stock_info` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_hold_stock_info` INNER JOIN stock_stock  WHERE `stockholderid` = '1'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001476s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132075s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006708s ]
+

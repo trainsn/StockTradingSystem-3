@@ -10,22 +10,41 @@ create table stock_user
 	password varchar(20),
 	email varchar(30),
 	phone_number varchar(20),
+	identityCard varchar(20),
+	primary key (userid)
+)DEFAULT CHARSET=utf8;
+
+drop table if exists stock_staff;
+create table stock_staff;
+(
+	staffid int not null auto_increment,
+	username varchar(20),
+	password varchar(20),
+	email varchar(30),
+	phone_number varchar(20),
+	identityCard varchar(20),
 	primary key (userid)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_stock;
-create table stock_stock
+create table stock_stock #股票信息
 (
 	stockid varchar(8) not null,
 	stockname varchar(20) not null,
-	isRaise enum('0','1'),
+	#company_name varchar(20) not null,
+	#comp_commissary varchar(20) not null, 
+	todayHigh double,
+	todayLow double,
 	price double,
+	isRaise enum('0','1'), #是否涨
+	phone varchar(20),
+	email varchar(20),
 	totalStockNum int,
 	primary key (stockid)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_personal_stock_account;
-create table stock_personal_stock_account
+create table stock_personal_stock_account #资金账户
 (
 	bankrollid int not null auto_increment,
 	bankroll double, #资金余额
@@ -34,6 +53,7 @@ create table stock_personal_stock_account
 	bankroll_in_cash double, #可取资金
 	total double, #总资产
 	total_stock double, #股票总资产
+	state enum('0','1'), #用于挂失 0代表不可用 1代表可用
 	userid int,
 	primary key (bankrollid),
 	foreign key (userid) references stock_user(userid)
@@ -43,19 +63,21 @@ drop table if exists stock_stockholder;
 create table stock_stockholder
 (
 	stockholderid int not null auto_increment,
+	state enum('0','1'), #用于挂失 0代表不可用 1代表可用
 	userid int,
 	primary key (stockholderid),
 	foreign key (userid) references stock_user(userid)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_hold_stock_info;
-create table stock_hold_stock_info
+create table stock_hold_stock_info #持仓信息
 (
 	stockholderid int not null,
 	stockid varchar(8) not null,
 	amount_total int not null,
 	amount_usable int not null,
 	cost_price double,
+	primary key (stockholderid, stockid),
 	foreign key (stockholderid) references stock_stockholder(stockholderid),
 	foreign key (stockid) references stock_stock(stockid)
 )DEFAULT CHARSET=utf8;
