@@ -5,15 +5,16 @@
         <title>股票交易系统——个人中心</title>
         <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
     </head>
 
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
-   <div class="col-sm-8 col-xs-7">    
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
      <gt name="export" value="0"> 
-       <table class=" table table-striped table-bordered">
+     <div class="table-responsive"> 
+       <table class=" table table-striped">
        <thead><tr><th style="text-align: center;">证券名称(代码)</th>
            <th style="text-align: center;">当前持股</th>
            <th style="text-align: center;">可卖股数</th>
@@ -40,5 +41,12 @@
       </gt>
    </div>
  </div>
+  <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[3].className+="active";
+    }
+ </script>
  </body>
  </html>

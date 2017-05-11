@@ -7,7 +7,7 @@
     <title>股票交易系统——个人中心</title>
     <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">  
+    <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
 
     <style type="text/css">
             .warning{
@@ -20,9 +20,10 @@
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
-    <table width="800px" class="table-bordered">
+     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <table class="table table-bordered col-sm-12">
     <tr>
-    <td width="550px">
+    <td class="col-sm-7 col-md-8" style="vertical-align: middle;" >
    <div class="col-sm-12" style="boder:3px;">
     <form class="form-horizontal" action="__URL__/addBuy" method="post" name="myform" id="myform" onsubmit="return Validate();">
       <!--<div class="form-group">
@@ -39,7 +40,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="stockid" onblur="CheckStockid(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="stockidInfo"></p>
         </div>
       </div>
@@ -48,7 +49,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="commission_price"  onblur="CheckPrice(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="priceInfo"></p>
         </div>
       </div>
@@ -57,7 +58,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="commission_account" onblur="CheckAccount(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="accountInfo"></p>
         </div>
       </div>
@@ -66,7 +67,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="bankroll_usable" value="{<$bankroll_usable>}" readonly>
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="bankrollInfo"></p>
         </div>
       </div>
@@ -79,7 +80,7 @@
     </form>
    </div>
    </td>
- <td width="250px">
+ <td class="col-sm-5 col-md-4">
     <table class="table table-condensed table-striped" style="margin-bottom:0">
     <caption style="text-align:center">行情</caption>
       <tr align="center">
@@ -136,8 +137,13 @@
  </td>
  </tr>
  </table>
-  
+ </div>
   <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[0].className+="active";
+    }
     function CheckStockid(value)
     {
       var regex = /^[0-9A-Za-z]+$/; //只包含数字和字母
@@ -265,6 +271,5 @@
         return false;
     }
   </script>
-
  </body>
  </html>

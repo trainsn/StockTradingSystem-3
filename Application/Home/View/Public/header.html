@@ -1,19 +1,25 @@
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
     <div class="navbar-header">
-    <a class="navbar-brand" href="#" style="
-    width: 430px;
-">
-        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.png" style="
-    width: 55px;
-">  
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <a class="navbar-brand active" href="#">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="__PUBLIC__/logo2.png" style="width: 55px; "/>  
     股票交易个人中心
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
     </a>
     </div>
+    <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
     <li><a><?php echo $_SESSION['username']?>，今天是<?php echo date('Y-m-d', time())?></a></li>
     <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__APP__/Home/Login/logout':history.go(0)" >退出登录</a></li>
     </ul>
    </div>
    </nav>
+    
+    <script src="__PUBLIC__/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>

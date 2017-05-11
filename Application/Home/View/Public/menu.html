@@ -1,26 +1,29 @@
-<section class="col-sm-3 col-xs-5">
-    <ul class="sidebar-menu">
-      <li class="sidebar-header">菜单</li>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+      <ul id="menu" class="nav nav-sidebar">
       <li>
         <a href="__URL__/buyStock">
-          <i class="fa fa-th"></i> <span>买入</span>
+          <i class="fa fa-th"></i> <span>  买入</span>
         </a>
       </li>
       <li>
         <a href="__URL__/sellStock">
-          <i class="fa fa-share"></i> <span>卖出</span>
+          <i class="fa fa-share"></i> <span>  卖出</span>
         </a>
       </li>
       <li>
         <a href="__URL__/revoke">
-          <i class="fa fa-dashboard"></i> <span>撤单</span>
+          <i class="fa fa-dashboard" aria-haspopup="true" aria-expanded="false"></i> <span>  撤单</span>
         </a>
       </li>
       <li>
-        <a href="#">
-          <i class="fa fa-files-o"></i> <span>查询</span> <i class="fa fa-angle-left pull-right"></i>
+        <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+          <i class="fa fa-files-o"></i> <span>  查询</span>
+           <span class="caret"></span>
         </a>
-        <ul class="sidebar-submenu">
+        <ul  class="sidenav-dropdown" data-sidenav-dropdown>
           <li><a href="__URL__/showPersonalAccount"><i class="fa fa-circle-o"></i> 资金账户信息</a></li>
           <li><a href="__URL__/showHoldInfo"><i class="fa fa-circle-o"></i> 持仓信息</a></li>
           <li><a href="__URL__/showTodayDeal"><i class="fa fa-circle-o"></i> 当日成交</a></li>
@@ -29,10 +32,10 @@
         </ul>
       </li>
     </ul>
-  </section>
+    </nav>
+</div>
+</div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="__PUBLIC__/js/sidebar-menu.js"></script>
-  <script>
-    $.sidebarMenu($('.sidebar-menu'))
-  </script>
+  <script type="text/javascript" src="__PUBLIC__/js/sidenav.js"></script>
+  <script>$('[data-sidenav]').sidenav();</script>

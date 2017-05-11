@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>股票交易系统——个人中心</title>
-    <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="/pro2/StockTradingSystem-3/Public/css/bootstrap.min.css">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/sidebar-menu.css">  
+    <link rel="stylesheet" href="/pro2/StockTradingSystem-3/Public/css/dashboard.css">
 
     <style type="text/css">
             .warning{
@@ -18,68 +18,79 @@
 </head>
 
   <body id="index">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
     <div class="navbar-header">
-    <a class="navbar-brand" href="#" style="
-    width: 430px;
-">
-        <img alt="Brand" class="col-sm-2 col-xs-3" src="/stocktradingsystem-3/Public/logo2.png" style="
-    width: 55px;
-">  
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <a class="navbar-brand active" href="#">
+        <img alt="Brand" class="col-sm-2 col-xs-3" src="/pro2/StockTradingSystem-3/Public/logo2.png" style="width: 55px; "/>  
     股票交易个人中心
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
     </a>
     </div>
+    <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
     <li><a><?php echo $_SESSION['username']?>，今天是<?php echo date('Y-m-d', time())?></a></li>
-    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/stocktradingsystem-3/index.php/Home/Login/logout':history.go(0)" >退出登录</a></li>
+    <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/pro2/StockTradingSystem-3/index.php/Home/Login/logout':history.go(0)" >退出登录</a></li>
     </ul>
    </div>
    </nav>
-    <section class="col-sm-3 col-xs-5">
-    <ul class="sidebar-menu">
-      <li class="sidebar-header">菜单</li>
+    
+    <script src="/pro2/StockTradingSystem-3/Public/js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="/pro2/StockTradingSystem-3/Public/js/bootstrap.min.js"></script>
+    <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+      <ul id="menu" class="nav nav-sidebar">
       <li>
-        <a href="/stocktradingsystem-3/index.php/Home/Index/buyStock">
-          <i class="fa fa-th"></i> <span>买入</span>
+        <a href="/pro2/StockTradingSystem-3/index.php/Home/Index/buyStock">
+          <i class="fa fa-th"></i> <span>  买入</span>
         </a>
       </li>
       <li>
-        <a href="/stocktradingsystem-3/index.php/Home/Index/sellStock">
-          <i class="fa fa-share"></i> <span>卖出</span>
+        <a href="/pro2/StockTradingSystem-3/index.php/Home/Index/sellStock">
+          <i class="fa fa-share"></i> <span>  卖出</span>
         </a>
       </li>
       <li>
-        <a href="/stocktradingsystem-3/index.php/Home/Index/revoke">
-          <i class="fa fa-dashboard"></i> <span>撤单</span>
+        <a href="/pro2/StockTradingSystem-3/index.php/Home/Index/revoke">
+          <i class="fa fa-dashboard" aria-haspopup="true" aria-expanded="false"></i> <span>  撤单</span>
         </a>
       </li>
       <li>
-        <a href="#">
-          <i class="fa fa-files-o"></i> <span>查询</span> <i class="fa fa-angle-left pull-right"></i>
+        <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+          <i class="fa fa-files-o"></i> <span>  查询</span>
+           <span class="caret"></span>
         </a>
-        <ul class="sidebar-submenu">
-          <li><a href="/stocktradingsystem-3/index.php/Home/Index/showPersonalAccount"><i class="fa fa-circle-o"></i> 资金账户信息</a></li>
-          <li><a href="/stocktradingsystem-3/index.php/Home/Index/showHoldInfo"><i class="fa fa-circle-o"></i> 持仓信息</a></li>
-          <li><a href="/stocktradingsystem-3/index.php/Home/Index/showTodayDeal"><i class="fa fa-circle-o"></i> 当日成交</a></li>
-          <li><a href="/stocktradingsystem-3/index.php/Home/Index/showTodayCommission"><i class="fa fa-circle-o"></i> 当日委托</a></li>
-          <li><a href="/stocktradingsystem-3/index.php/Home/Index/showDeal"><i class="fa fa-circle-o"></i> 历史成交</a></li>
+        <ul  class="sidenav-dropdown" data-sidenav-dropdown>
+          <li><a href="/pro2/StockTradingSystem-3/index.php/Home/Index/showPersonalAccount"><i class="fa fa-circle-o"></i> 资金账户信息</a></li>
+          <li><a href="/pro2/StockTradingSystem-3/index.php/Home/Index/showHoldInfo"><i class="fa fa-circle-o"></i> 持仓信息</a></li>
+          <li><a href="/pro2/StockTradingSystem-3/index.php/Home/Index/showTodayDeal"><i class="fa fa-circle-o"></i> 当日成交</a></li>
+          <li><a href="/pro2/StockTradingSystem-3/index.php/Home/Index/showTodayCommission"><i class="fa fa-circle-o"></i> 当日委托</a></li>
+          <li><a href="/pro2/StockTradingSystem-3/index.php/Home/Index/showDeal"><i class="fa fa-circle-o"></i> 历史成交</a></li>
         </ul>
       </li>
     </ul>
-  </section>
+    </nav>
+</div>
+</div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-  <script src="/stocktradingsystem-3/Public/js/sidebar-menu.js"></script>
-  <script>
-    $.sidebarMenu($('.sidebar-menu'))
-  </script>
-    <table width="800px" class="table-bordered">
+  <script type="text/javascript" src="/pro2/StockTradingSystem-3/Public/js/sidenav.js"></script>
+  <script>$('[data-sidenav]').sidenav();</script>
+
+     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <table class="table table-bordered col-sm-12">
     <tr>
-    <td width="550px">
+    <td class="col-sm-7 col-md-8" style="vertical-align: middle;" >
    <div class="col-sm-12" style="boder:3px;">
-    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addBuy" method="post" name="myform" id="myform" onsubmit="return Validate();">
+    <form class="form-horizontal" action="/pro2/StockTradingSystem-3/index.php/Home/Index/addBuy" method="post" name="myform" id="myform" onsubmit="return Validate();">
       <!--<div class="form-group">
         <label class="col-sm-1 col-lg-2 control-label">股东代码</label>
         <div class="col-sm-3 col-lg-3">
@@ -94,7 +105,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="stockid" onblur="CheckStockid(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="stockidInfo"></p>
         </div>
       </div>
@@ -103,7 +114,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="commission_price"  onblur="CheckPrice(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="priceInfo"></p>
         </div>
       </div>
@@ -112,7 +123,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="commission_account" onblur="CheckAccount(this.value)">
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="accountInfo"></p>
         </div>
       </div>
@@ -121,7 +132,7 @@
         <div class="col-sm-6 col-lg-6">
         <input type="text" class="form-control" name="bankroll_usable" value="<?php echo ($bankroll_usable); ?>" readonly>
         </div>
-        <div class="col-sm-4 warning" style="height:34px; padding:9px;">
+        <div class="col-sm-4 warning" style="height:34px; padding:5px;">
         <p id="bankrollInfo"></p>
         </div>
       </div>
@@ -134,7 +145,7 @@
     </form>
    </div>
    </td>
- <td width="250px">
+ <td class="col-sm-5 col-md-4">
     <table class="table table-condensed table-striped" style="margin-bottom:0">
     <caption style="text-align:center">行情</caption>
       <tr align="center">
@@ -191,8 +202,13 @@
  </td>
  </tr>
  </table>
-  
+ </div>
   <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[0].className+="active";
+    }
     function CheckStockid(value)
     {
       var regex = /^[0-9A-Za-z]+$/; //只包含数字和字母
@@ -320,6 +336,5 @@
         return false;
     }
   </script>
-
  </body>
  </html>

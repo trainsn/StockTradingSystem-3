@@ -5,10 +5,10 @@
         <title>股票交易系统——个人中心</title>
         <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
-
+        <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
         <style type="text/css">
             .warning{
+                height:34px; 
                 padding: 5px;
                 color: #A0A0A0;
             }
@@ -18,9 +18,11 @@
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
-    <table width="800px" class="table-bordered">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="table-responsive">
+    <table class="table col-sm-12 table-bordered">
     <tr>
-    <td width="550px">
+    <td class="col-sm-7 col-md-8" style="vertical-align: middle;" />
    <div class="col-sm-12" style="boder:3px;">
     <form class="form-horizontal" action="__URL__/addSell" method="post" name="myform" id="myform" onsubmit="return Validate();">
       <!--<div class="form-group">
@@ -73,9 +75,8 @@
       </div>
     </form>
    </div>
- </div>
  </td>
- <td width="250px">
+ <td class="col-sm-5 col-md-4">
     <table class="table table-condensed table-striped" style="margin-bottom:0">
     <caption style="text-align:center">行情</caption>
       <tr align="center">
@@ -132,8 +133,14 @@
  </td>
  </tr>
  </table>
-
+  </div>
+  </div>
   <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[1].className+="active";
+    }
     function CheckStockid(value)
     {
       var regex = /^[0-9A-Za-z]+$/; //只包含数字和字母
@@ -199,6 +206,5 @@
         return false;
     }
   </script>
-
  </body>
  </html>

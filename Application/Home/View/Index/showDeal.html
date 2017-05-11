@@ -5,68 +5,47 @@
         <title>股票交易系统——个人中心</title>
         <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
+        <style type="text/css">
+          td{
+            vertical-align: bottom;
+            text-align: center;
+          }
+        </style>
     </head>
 
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
-  
-    <div class="col-sm-8 col-xs-7">    
-     <gt name="export" value="0"> 
-     <table class="table" style="margin:0;">
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    <div class="table-responsive"> 
+     <table class="table table-striped">
       <tr>
-      <!--<td style="text-align: center;vertical-align: middle">
-        <div style="height:34px; padding:9px;">
-        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">按时间查询</p>
-        </div>
-      </td>-->
-      <td style="text-align: center;vertical-align: middle">
-        <div style="height:34px; padding:9px;">
-        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">自</p>
-        </div>
+      <td style="text-align: center; vertical-align: middle;">
+        <h id="accountInfo" style=" font-family:'微软雅黑'">按时间查询</h>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="date" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_date"/>
-        </div>
+      <td style="text-align: center;vertical-align: middle;">
+        <span id="accountInfo" style="font-family:'微软雅黑'">自</span>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_time" value="00:00:01" />
-        </div>
+      <td style="text-align: center;vertical-align: middle;">
+        <input type="date" style="font-family:'微软雅黑'" class="form-control" id="start_date"/>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div style="height:34px; padding:9px;">
-        <p id="accountInfo" style="font-size:16px; font-family:'微软雅黑'">至</p>
-        </div>
+      
+      <td style="text-align: center;vertical-align: middle;">
+        <span id="accountInfo" style=" font-family:'微软雅黑'">至</span>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="date" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_date"/>
-        </div>
+      <td style="text-align: center;vertical-align: middle;">
+        <input type="date" style=" font-family:'微软雅黑'" class="form-control" id="end_date"/>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_time" value="23:59:59"/>
-        </div>
-      </td>
-      <td style="text-align: center;vertical-align: middle">
-      <div>
+      <td style="text-align: center;vertical-align: middle;">
           <input type="button" class="btn btn-primary" name="search" value="查询" onclick="Search();">
-        </div>
-      </td>
-      </tr>
-       <tr>
-      <td colspan="8" style="height:20px; padding-top:1px;padding-bottom:0;">
-      <div>
-        <p id="searchInfo" style="font-size:16px; font-family:'微软雅黑';color:red">&nbsp;</p>
-        </div>
       </td>
       </tr>
     </table>
-
-    <table class=" table table-striped table-bordered">
+    </div>
+    <div class="table-responsive"> 
+    <gt name="export" value="0"> 
+    <table class="table table-striped">
        <thead><tr><th style="text-align: center;">证券名称(代码)</th>
            <th style="text-align: center;">买入/卖出</th>
            <th style="text-align: center;">成交价格</th>
@@ -76,80 +55,84 @@
         </tr>
        </thead>
        <tbody id="myTableBody">
+       <volist id="deal_info" name="deal_info">
+          <tr><td style="text-align: center;vertical-align: middle">{<$deal_info.stockname>}({<$deal_info.stockid>})</td>
+              <td style="text-align: center;vertical-align: middle">{<$deal_info.operation>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$deal_info.deal_price>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$deal_info.dealed_amount>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$deal_info.dealed_value>}</td>
+              <td style="text-align: center;vertical-align: middle">{<$deal_info.time_disp>}</td>
+            </tr>
+        </volist>    
        </tbody>
     </table>
-    <else/>暂时没有数据
     </gt>
-
    </div>
-  </div>
+   </div>
+<script type="text/javascript">
+ function GetCurrentDate()
+{
+   var currentDate = new Date();
+   var outStr = "";
+   var month,date;
+   outStr = outStr+currentDate.getFullYear();//获取完整的年份(4位,1970-)
 
-  <script type="text/javascript">
-  function GetCurrentDate()
-  {
-    var currentDate = new Date();
-    var outStr = "";
-    var month,date;
-
-    outStr = outStr+currentDate.getFullYear();//获取完整的年份(4位,1970-)
-
-    month = 1+currentDate.getMonth();//获取当前月份(gatMonth得到的是0-11,0代表1月)
-    if(month<10)
+  month = 1+currentDate.getMonth();//获取当前月份(gatMonth得到的是0-11,0代表1月)
+   if(month<10)
       outStr = outStr+"-"+"0"+month;
     else
-      outStr = outStr+"-"+month; 
+     outStr = outStr+"-"+month; 
 
-    date = currentDate.getDate(); //获取当前日(1-31)
-    if(date<10)
-      outStr = outStr+"-"+"0"+date;
+   date = currentDate.getDate(); //获取当前日(1-31)
+   if(date<10)
+     outStr = outStr+"-"+"0"+date;
     else
-      outStr = outStr+"-"+date; 
+     outStr = outStr+"-"+date; 
 
     document.getElementById("start_date").value = outStr;
     document.getElementById("end_date").value = outStr;
-  }
+}
 
     var arr = new Array();
     var arrLen = 0;
     arr["stock"] = new Array();
-    arr["operation"] = new Array();
+   arr["operation"] = new Array();
     arr["price"] = new Array();
     arr["amount"] = new Array();
     arr["value"] = new Array();
     arr["time"] = new Array();
 
-    <volist id="deal_info" name="deal_info">
+   <volist id="deal_info" name="deal_info">
       arr["stock"].push("{<$deal_info.stockname>}({<$deal_info.stockid>})");
-      arr["operation"].push("{<$deal_info.operation>}");
-      arr["price"].push("{<$deal_info.deal_price>}");
-      arr["amount"].push("{<$deal_info.dealed_amount>}");
-      arr["value"].push("{<$deal_info.dealed_value>}");
-      arr["time"].push("{<$deal_info.time_disp>}");
+     arr["operation"].push("{<$deal_info.operation>}");
+     arr["price"].push("{<$deal_info.deal_price>}");
+     arr["amount"].push("{<$deal_info.dealed_amount>}");
+     arr["value"].push("{<$deal_info.dealed_value>}");
+     arr["time"].push("{<$deal_info.time_disp>}");
       arrLen = arrLen+1;
-    </volist>
+   </volist>
 
-  function Search()
+ function Search()
   {
-    var strStart = document.getElementById("start_date").value+" "+document.getElementById("start_time").value;
-    var timestampStart = Date.parse(new Date(strStart))/1000;//获取时间戳(以s为单位)
-    var strEnd = document.getElementById("end_date").value+" "+document.getElementById("end_time").value;
-    var timestampEnd = Date.parse(new Date(strEnd))/1000;//获取时间戳(以s为单位)
+   var strStart = document.getElementById("start_date").value+" "+document.getElementById("start_time").value;
+   var timestampStart = Date.parse(new Date(strStart))/1000;//获取时间戳(以s为单位)
+   var strEnd = document.getElementById("end_date").value+" "+document.getElementById("end_time").value;
+   var timestampEnd = Date.parse(new Date(strEnd))/1000;//获取时间戳(以s为单位)
 
-    if(timestampStart > timestampEnd)
-    {
-      document.getElementById("searchInfo").innerHTML = "查询起始时间需早于截止时间";
-      return false;
-    }
-
-    var outHTML = "";
-    var time;
+   if(timestampStart > timestampEnd)
+   {
+     document.getElementById("searchInfo").innerHTML = "查询起始时间需早于截止时间";
+     return false;
+   }
+   var outHTML = "";
+  var time;
 
     for (var i = 0; i < arrLen; i++) 
     {
-      time = Date.parse(new Date(arr["time"][i]))/1000;
-      if(time >= timestampStart && time <= timestampEnd)
-      {
-        outHTML = outHTML + "<tr>";
+     time = Date.parse(new Date(arr["time"][i]))/1000;
+       if(time >= timestampStart && time <= timestampEnd)
+       {
+         outHTML = outHTML + "<tr>";
         outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
         outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
         outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["price"][i]+"</td>";
@@ -158,31 +141,34 @@
         outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
         outHTML = outHTML + "</tr>";
       }
-    }
-    document.getElementById("myTableBody").innerHTML = outHTML;
-    document.getElementById("searchInfo").innerHTML = "&nbsp;";
-    return true;
-  }
-
-
-  window.onload=function(){
-    GetCurrentDate();
-
-    var outHTML = "";
-    for (var i = 0; i < arrLen; i++) 
-    {
-      outHTML = outHTML + "<tr>";
-      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
-      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
+     }
+     document.getElementById("myTableBody").innerHTML = outHTML;
+     document.getElementById("searchInfo").innerHTML = "&nbsp;";
+     return true;
+   }
+ 
+ 
+   window.onload=function(){
+    var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[3].className+="active";
+     GetCurrentDate();
+ 
+     var outHTML = "";
+     for (var i = 0; i < arrLen; i++) 
+     {
+       outHTML = outHTML + "<tr>";
+       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
+       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["price"][i]+"</td>";
-      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["amount"][i]+"</td>";
-      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["value"][i]+"</td>";
-      outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
-      outHTML = outHTML + "</tr>";
-    }
+       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["amount"][i]+"</td>";
+       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["value"][i]+"</td>";
+       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
+       outHTML = outHTML + "</tr>";
+     }
     document.getElementById("myTableBody").innerHTML = outHTML;
-  } 
-
+   } 
+ 
   </script>
  </body>
  </html>

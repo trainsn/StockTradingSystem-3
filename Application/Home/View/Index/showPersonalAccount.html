@@ -5,36 +5,44 @@
         <title>股票交易系统——个人中心</title>
         <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <link rel="stylesheet" href="__PUBLIC__/css/sidebar-menu.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
     </head>
 
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
-   <div class="col-sm-8 col-xs-7">    
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">  
      <gt name="export" value="0"> 
-       <table class=" table table-bordered">       
-        <tr><th style="text-align: center;">资金账户号</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankrollid>}</td>
-        </tr>
-        <tr><th style="text-align: center;">资金余额</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll>}</td>
-        </tr>
-        <tr><th style="text-align: center;">可用资金</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll_usable>}</td>
-        </tr>
-        <tr><th style="text-align: center;">冻结资金</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll_freezed>}</td>
-        </tr>
-        <tr><th style="text-align: center;">总资产</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.total>}</td>
-        </tr>   
-        <tr><th style="text-align: center;">股票总资产</th>
-           <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.total_stock>}</td>
-        </tr>          </table>
+     <div class="table-responsive">  
+       <table class=" table table-striped">     
+        <thead><tr>
+          <th style="text-align: center;">资金账户号</th>
+          <th style="text-align: center;">资金余额</th>
+          <th style="text-align: center;">可用资金</th>
+          <th style="text-align: center;">冻结资金</th>
+          <th style="text-align: center;">总资产</th>
+          <th style="text-align: center;">股票总资产</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankrollid>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll_usable>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.bankroll_freezed>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.total>}</td>
+            <td style="text-align: center;vertical-align: middle">{<$personalAccount_info.total_stock>}</td>
+            </tr>
+        </tbody>
       <else/>暂时没有数据
      </gt>
    </div>
  </div>
+   <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[3].className+="active";
+    }
+ </script>
  </body>
  </html>
