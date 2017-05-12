@@ -27,6 +27,7 @@ class IndexController extends Controller {
 		$condition['userid'] = $_SESSION['userid'];
 		$personalAccount_info  = $personalAccount->where($condition)->find();
 
+		//var_dump($personalAccount_info['bankroll_usable']);
 		$this->assign('bankroll_usable', $personalAccount_info['bankroll_usable']);
 		$this->display();
 	}
@@ -36,9 +37,7 @@ class IndexController extends Controller {
 		$condition['userid'] = $_SESSION['userid'];
 		$personalAccount_info  = $personalAccount->where($condition)->find();
 
-		$this->assign('bankroll_usable', $personalAccount_info['bankroll_usable']);
-
-		
+		$this->assign('bankroll_usable', $personalAccount_info['bankroll_usable']);		
 		$this->display();
 	}	
 
@@ -68,6 +67,10 @@ class IndexController extends Controller {
 			$this->error('总价超过可用资金');
 		}
 
+		$personalAccount->where($condition_personal)->setDec('bankroll_usable',$_POST['commission_account'] * $_POST['commission_price']); // 可用资金-
+		$personalAccount->where($condition_personal)->setInc('bankroll_freezed',$_POST['commission_account'] * $_POST['commission_price']); // 冻结资金+
+
+		//添加委托记录
 		$data['stockid'] = $_POST['stockid'];
 		$data['commission_price'] = $_POST['commission_price'];
 		$data['direction'] = '0';
@@ -80,7 +83,7 @@ class IndexController extends Controller {
 		if (!$commission->add($data))
 			$this->error("下单失败");
 
-		$this->success("下单成功", "Index/buyStock");
+		$this->success("下单成功", U("Index/buyStock"));
 	}
 
 	function addSell(){
@@ -120,7 +123,7 @@ class IndexController extends Controller {
 		if (!$commission->add($data))
 			$this->error("下单失败");
 
-		$this->success("下单成功", "Index/sellStock");
+		$this->success("下单成功", U("Index/sellStock"));
 	}
 
 	function revoke(){

@@ -16,6 +16,8 @@ insert into stock_hold_stock_info
 
 insert into stock_deal
 	values(1,'000856',10.2, 1492772166, 100, 1020, 8, 6);
+insert into stock_deal
+	values(2,'000856',10.2, 1494557704, 100, 1020, 8, 6);
 
 insert into stock_personal_stock_account(bankrollid,bankroll,
 	bankroll_usable,bankroll_freezed, total ,total_stock,userid)

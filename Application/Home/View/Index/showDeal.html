@@ -30,15 +30,24 @@
       <td style="text-align: center;vertical-align: middle;">
         <input type="date" style="font-family:'微软雅黑'" class="form-control" id="start_date"/>
       </td>
-      
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_time" value="00:00:01" />
+        </div>
+      </td>
       <td style="text-align: center;vertical-align: middle;">
         <span id="accountInfo" style=" font-family:'微软雅黑'">至</span>
       </td>
       <td style="text-align: center;vertical-align: middle;">
         <input type="date" style=" font-family:'微软雅黑'" class="form-control" id="end_date"/>
       </td>
+      <td style="text-align: center;vertical-align: middle">
+        <div>
+        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_time" value="23:59:59"/>
+        </div>
+      </td>
       <td style="text-align: center;vertical-align: middle;">
-          <input type="button" class="btn btn-primary" name="search" value="查询" onclick="Search();">
+          <input type="button" class="btn btn-primary" name="search" value="查询" onclick="Search()">
       </td>
       </tr>
     </table>
@@ -55,15 +64,6 @@
         </tr>
        </thead>
        <tbody id="myTableBody">
-       <volist id="deal_info" name="deal_info">
-          <tr><td style="text-align: center;vertical-align: middle">{<$deal_info.stockname>}({<$deal_info.stockid>})</td>
-              <td style="text-align: center;vertical-align: middle">{<$deal_info.operation>}</td>
-              <td style="text-align: center;vertical-align: middle">{<$deal_info.deal_price>}</td>
-              <td style="text-align: center;vertical-align: middle">{<$deal_info.dealed_amount>}</td>
-              <td style="text-align: center;vertical-align: middle">{<$deal_info.dealed_value>}</td>
-              <td style="text-align: center;vertical-align: middle">{<$deal_info.time_disp>}</td>
-            </tr>
-        </volist>    
        </tbody>
     </table>
     </gt>
@@ -102,15 +102,15 @@
     arr["value"] = new Array();
     arr["time"] = new Array();
 
-   <volist id="deal_info" name="deal_info">
-      arr["stock"].push("{<$deal_info.stockname>}({<$deal_info.stockid>})");
-     arr["operation"].push("{<$deal_info.operation>}");
-     arr["price"].push("{<$deal_info.deal_price>}");
-     arr["amount"].push("{<$deal_info.dealed_amount>}");
-     arr["value"].push("{<$deal_info.dealed_value>}");
-     arr["time"].push("{<$deal_info.time_disp>}");
+    <volist name="deal_info" id="vi">
+      arr["stock"].push("{<$vi.stockname>}");
+      arr["operation"].push("{<$vi.operation>}");
+      arr["price"].push("{<$vi.deal_price>}");
+      arr["amount"].push("{<$vi.dealed_amount>}");
+      arr["value"].push("{<$vi.dealed_value>}");
+      arr["time"].push("{<$vi.time_disp>}");
       arrLen = arrLen+1;
-   </volist>
+    </volist>
 
  function Search()
   {
@@ -143,7 +143,7 @@
       }
      }
      document.getElementById("myTableBody").innerHTML = outHTML;
-     document.getElementById("searchInfo").innerHTML = "&nbsp;";
+     //document.getElementById("searchInfo").innerHTML = "&nbsp;";
      return true;
    }
  
