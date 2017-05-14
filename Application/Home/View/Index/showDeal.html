@@ -13,7 +13,6 @@
           }
         </style>
     </head>
-
   <body id="index">
     <include file="./Application/Home/View/Public/header.html" />
     <include file="./Application/Home/View/Public/menu.html" />
@@ -30,26 +29,23 @@
       <td style="text-align: center;vertical-align: middle;">
         <input type="date" style="font-family:'微软雅黑'" class="form-control" id="start_date"/>
       </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="start_time" value="00:00:01" />
-        </div>
-      </td>
       <td style="text-align: center;vertical-align: middle;">
         <span id="accountInfo" style=" font-family:'微软雅黑'">至</span>
       </td>
       <td style="text-align: center;vertical-align: middle;">
         <input type="date" style=" font-family:'微软雅黑'" class="form-control" id="end_date"/>
-      </td>
-      <td style="text-align: center;vertical-align: middle">
-        <div>
-        <input type="time" style="font-size:16px; font-family:'微软雅黑'" class="form-control" id="end_time" value="23:59:59"/>
-        </div>
-      </td>
+      </td>      
       <td style="text-align: center;vertical-align: middle;">
           <input type="button" class="btn btn-primary" name="search" value="查询" onclick="Search()">
       </td>
       </tr>
+        <tr> 
+      <td colspan="8" style="height:20px; padding-top:1px;padding-bottom:0;"> 
+      <div> 
+       <p id="searchInfo" style="font-size:16px; font-family:'微软雅黑';color:red">&nbsp;</p> 
+       </div> 
+      </td> 
+     </tr> 
     </table>
     </div>
     <div class="table-responsive"> 
@@ -69,6 +65,7 @@
     </gt>
    </div>
    </div>
+
 <script type="text/javascript">
  function GetCurrentDate()
 {
@@ -90,7 +87,7 @@
      outStr = outStr+"-"+date; 
 
     document.getElementById("start_date").value = outStr;
-    document.getElementById("end_date").value = outStr;
+   document.getElementById("end_date").value = outStr;
 }
 
     var arr = new Array();
@@ -111,12 +108,11 @@
       arr["time"].push("{<$vi.time_disp>}");
       arrLen = arrLen+1;
     </volist>
-
  function Search()
   {
-   var strStart = document.getElementById("start_date").value+" "+document.getElementById("start_time").value;
+   var strStart = document.getElementById("start_date").value+" "+"00:00:00";
    var timestampStart = Date.parse(new Date(strStart))/1000;//获取时间戳(以s为单位)
-   var strEnd = document.getElementById("end_date").value+" "+document.getElementById("end_time").value;
+   var strEnd = document.getElementById("end_date").value+" "+"23:59:59";
    var timestampEnd = Date.parse(new Date(strEnd))/1000;//获取时间戳(以s为单位)
 
    if(timestampStart > timestampEnd)
@@ -124,6 +120,7 @@
      document.getElementById("searchInfo").innerHTML = "查询起始时间需早于截止时间";
      return false;
    }
+
    var outHTML = "";
   var time;
 
@@ -142,22 +139,22 @@
         outHTML = outHTML + "</tr>";
       }
      }
+     if(outHTML!="")
      document.getElementById("myTableBody").innerHTML = outHTML;
      //document.getElementById("searchInfo").innerHTML = "&nbsp;";
      return true;
    }
- 
- 
+
    window.onload=function(){
     var item=document.getElementById("menu");
       var itemss=item.getElementsByTagName("li");
       itemss[3].className+="active";
      GetCurrentDate();
- 
+
      var outHTML = "";
      for (var i = 0; i < arrLen; i++) 
      {
-       outHTML = outHTML + "<tr>";
+      outHTML = outHTML + "<tr>";
        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["stock"][i]+"</td>";
        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["operation"][i]+"</td>";
       outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["price"][i]+"</td>";
@@ -166,9 +163,9 @@
        outHTML = outHTML + "<td style=\"text-align: center;vertical-align: middle\">"+arr["time"][i]+"</td>";
        outHTML = outHTML + "</tr>";
      }
+     if(outHTML!="")
     document.getElementById("myTableBody").innerHTML = outHTML;
    } 
- 
   </script>
  </body>
  </html>
