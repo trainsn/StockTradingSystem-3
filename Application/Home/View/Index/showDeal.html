@@ -120,7 +120,11 @@
      document.getElementById("searchInfo").innerHTML = "查询起始时间需早于截止时间";
      return false;
    }
+   else{
+      document.getElementById("searchInfo").innerHTML = "";
+   }
 
+    document.getElementById("myTableBody").innerHTML = "";
    var outHTML = "";
   var time;
 
