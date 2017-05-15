@@ -15,7 +15,7 @@ class LoginController extends Controller {
 		if (!$us){
 			$this->error("用户名不存在");
 		}
-		if ($us['password']!=$_POST['password']){
+		if ($us['password']!=md5($_POST['password'])){
 			$this->error("密码错误");
 		}
 		$_SESSION['username'] = $_POST['username'];

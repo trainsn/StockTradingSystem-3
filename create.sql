@@ -7,7 +7,7 @@ create table stock_user
 (
 	userid int not null auto_increment,
 	username varchar(20),
-	password varchar(20),
+	password varchar(32),
 	email varchar(30),
 	phone_number varchar(20),
 	identityCard varchar(20),
@@ -15,15 +15,15 @@ create table stock_user
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_staff;
-create table stock_staff;
+create table stock_staff
 (
 	staffid int not null auto_increment,
 	username varchar(20),
-	password varchar(20),
+	password varchar(32),
 	email varchar(30),
 	phone_number varchar(20),
 	identityCard varchar(20),
-	primary key (userid)
+	primary key (staffid)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_stock;

@@ -10,6 +10,8 @@ class RegisterController extends Controller {
 		$user = D('user');
 		if (!$user->create()){
 			$this->error($user->getError());
+		}else {
+			$user->password = md5($_POST["password"]);
 		}
 
 		$lastId = $user->add();
