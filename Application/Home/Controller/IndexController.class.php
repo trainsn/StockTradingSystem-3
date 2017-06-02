@@ -203,7 +203,7 @@ class IndexController extends Controller {
 		
 		$commission = M('commission');
 		$condition['commissionid'] = $commissionid;
-		$commission_info = $commission->where($conditino)->find();
+		$commission_info = $commission->where($condition)->find();
 
 		if ($commission_info['direction'] == '1'){	//撤销卖出 需要修改持仓信息 添加可处理股票	
 			$hold = M('hold_stock_info');

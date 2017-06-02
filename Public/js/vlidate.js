@@ -35,7 +35,7 @@
             var name=document.forms["myForm"].username.value.trim();
             var nameRegex=/^\w{6,20}$/;
             if(!nameRegex.test(name)){
-                document.getElementById("nameInfo").innerHTML="用户名必须在6个字母或数字以上，不超过20";
+                document.getElementById("nameInfo").innerHTML="用户名由6到20个字符(支持字母、数字、下划线)组成";
                 return false;
             }else{
                 document.getElementById("nameInfo").innerHTML="";
@@ -53,7 +53,7 @@
             //密码长度在8个字符到16个字符，由字母、数字和"_"组成
             var passwordRegex=/^[0-9A-Za-z_]\w{7,15}$/;
             if(!passwordRegex.test(password)){
-                document.getElementById("passwordInfo").innerHTML="密码必须由在8个字符到16个字符之间的字母或数字组成";
+                document.getElementById("passwordInfo").innerHTML="密码由8到16个字符(支持字母、数字、下划线)组成";
                 return false;
             }else{
                 document.getElementById("passwordInfo").innerHTML="";
