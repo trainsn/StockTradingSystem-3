@@ -6,6 +6,13 @@
         <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">  
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/dashboard.css">
+        <style type="text/css">
+            .warning{
+                height:34px; 
+                padding: 5px;
+                color: #A0A0A0;
+            }
+        </style>
     </head>
 
   <body id="index">
@@ -115,38 +122,13 @@
   <script type="text/javascript" src="/stocktradingsystem-3/Public/js/sidenav.js"></script>
   <script>$('[data-sidenav]').sidenav();</script>
 
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-     <?php if(($export) > "0"): ?><div class="table-responsive"> 
-       <table class=" table table-striped">
-       <thead><tr><th style="text-align: center;">证券名称(代码)</th>
-           <th style="text-align: center;">当前持股</th>
-           <th style="text-align: center;">可卖股数</th>
-           <th style="text-align: center;">成本价</th>
-           <th style="text-align: center;">市价</th>
-           <th style="text-align: center;">操作</th>
-        </tr>
-       </thead>
-       <tbody>
-        <?php if(is_array($hold_info)): $i = 0; $__LIST__ = $hold_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hold_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["stockname"]); ?>(<?php echo ($hold_info["stockid"]); ?>)</td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["amount_total"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["amount_usable"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["cost_price"]); ?></td>
-              <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["price"]); ?></td>
-              <td style="text-align: center;vertical-align: middle">
-                <a href="/stocktradingsystem-3/index.php/Home/Index/buyStock">买</a>/
-                <a href="/stocktradingsystem-3/index.php/Home/Index/sellStock">卖</a>
-              </td>
-            </tr><?php endforeach; endif; else: echo "" ;endif; ?>    
-       </tbody></table>
-      <?php else: ?>暂时没有数据<?php endif; ?>
-   </div>
- </div>
+
   <script type="text/javascript">
     window.onload=function(){
       var item=document.getElementById("menu");
       var itemss=item.getElementsByTagName("li");
-      itemss[3].className+="active";
+      itemss[1].className+="active";
     }
- </script>
+  </script>
  </body>
  </html>

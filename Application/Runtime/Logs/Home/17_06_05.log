@@ -1,0 +1,1778 @@
+[ 2017-06-05T21:14:21+08:00 ] ::1 /stocktradingsystem-3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022124s ]
+
+[ 2017-06-05T21:14:21+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000659s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007594s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010698s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009004s ]
+
+[ 2017-06-05T21:14:33+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000954s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009437s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.1179s ]
+SQL: SELECT * FROM `stock_user` WHERE `username` = 'trainsn' LIMIT 1   [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003651s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090388s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006673s ]
+
+[ 2017-06-05T21:14:40+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000480s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008744s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `stock_user` WHERE `username` = 'trainsn' LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007580s ]
+
+[ 2017-06-05T21:14:45+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008409s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `stock_user` WHERE `username` = 'trainsn' LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007954s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008420s ]
+
+[ 2017-06-05T21:17:29+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000537s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008301s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0490s ]
+SQL: SELECT * FROM `stock_user` WHERE `username` = 'trainsn' LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003855s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006251s ]
+
+[ 2017-06-05T21:17:30+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000501s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008121s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0437s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0375s ]
+
+[ 2017-06-05T21:17:31+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000508s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007926s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0946s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.193231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.196744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005979s ]
+
+[ 2017-06-05T21:18:08+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010476s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.1131s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006818s ]
+
+[ 2017-06-05T21:18:37+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000480s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005788s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010702s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0624s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0324s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006768s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.192976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009975s ]
+
+[ 2017-06-05T21:18:40+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008381s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003870s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006311s ]
+
+[ 2017-06-05T21:18:42+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016898s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.1058s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001350s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013816s ]
+
+[ 2017-06-05T21:18:47+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000473s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011675s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009274s ]
+
+[ 2017-06-05T21:22:37+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013286s ]
+
+[ 2017-06-05T21:22:37+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000973s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007413s ]
+
+[ 2017-06-05T21:22:38+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000491s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003640s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006888s ]
+
+[ 2017-06-05T21:23:49+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Login/check_login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013433s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\LoginController.class.php 第 11 行.
+SQL: SHOW COLUMNS FROM `stock_user` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_user` WHERE `username` = 'trainsn' LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003796s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011143s ]
+
+[ 2017-06-05T21:23:50+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000827s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011218s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0806s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-06-05T21:23:51+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000861s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012626s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009389s ]
+
+[ 2017-06-05T21:28:38+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000783s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007806s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001749s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.008469s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013946s ]
+
+[ 2017-06-05T21:28:39+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000423s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008445s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001006s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003706s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007906s ]
+
+[ 2017-06-05T21:28:40+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000837s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014709s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0534s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+ERR: 非法操作:searchStock
+
+[ 2017-06-05T21:29:46+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000797s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008505s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007769s ]
+
+[ 2017-06-05T21:34:58+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000486s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008502s ]
+
+[ 2017-06-05T21:35:12+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000485s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009205s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.1354s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003668s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007172s ]
+
+[ 2017-06-05T21:35:13+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009289s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002546s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.116374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006570s ]
+
+[ 2017-06-05T21:35:16+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010734s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001313s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003925s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012285s ]
+
+[ 2017-06-05T21:35:17+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000746s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005857s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004385s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010763s ]
+
+[ 2017-06-05T21:35:22+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000487s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008237s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0473s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007689s ]
+
+[ 2017-06-05T21:35:22+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001321s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014991s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007037s ]
+
+[ 2017-06-05T21:35:36+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004950s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010928s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008417s ]
+
+[ 2017-06-05T21:45:21+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008744s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0447s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014456s ]
+
+[ 2017-06-05T21:45:23+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000893s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008129s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005960s ]
+
+[ 2017-06-05T21:47:32+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011033s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0837s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001466s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.125163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009841s ]
+
+[ 2017-06-05T21:47:34+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000824s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011369s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001753s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009287s ]
+
+[ 2017-06-05T21:47:49+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showPersonalAccount
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007024s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007072s ]
+
+[ 2017-06-05T21:47:51+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showHoldInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000472s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009190s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_hold_stock_info` [ RunTime:0.0331s ]
+SQL: SELECT * FROM `stock_hold_stock_info` INNER JOIN stock_stock  WHERE `stockholderid` = '1'  [ RunTime:0.0167s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002945s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121119s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006515s ]
+
+[ 2017-06-05T21:47:54+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showTodayCommission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000836s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021723s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0437s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `commission_time` >= 1496620800  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003636s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006500s ]
+
+[ 2017-06-05T21:47:56+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006168s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003721s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012223s ]
+
+[ 2017-06-05T21:54:20+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000885s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014911s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0177s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008764s ]
+
+[ 2017-06-05T21:54:46+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000550s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010922s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001802s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006064s ]
+
+[ 2017-06-05T21:56:13+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007234s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0507s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003806s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007059s ]
+
+[ 2017-06-05T21:56:14+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000666s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006305s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004487s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009065s ]
+
+[ 2017-06-05T21:56:16+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006045s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003869s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063229s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007488s ]
+
+[ 2017-06-05T21:57:54+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/searchStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000703s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006289s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.007120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008871s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011232s ]
+
+[ 2017-06-05T21:57:57+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/showHoldInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000701s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008515s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0558s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `stock_hold_stock_info` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_hold_stock_info` INNER JOIN stock_stock  WHERE `stockholderid` = '1'  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001689s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005637s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009912s ]
+
+[ 2017-06-05T21:58:05+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000488s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006010s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005782s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003762s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008957s ]
+
+[ 2017-06-05T21:58:06+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000523s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007462s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003770s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002757s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009616s ]
+
+[ 2017-06-05T21:58:06+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000644s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006552s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003747s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003585s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007797s ]
+
+[ 2017-06-05T21:58:08+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000752s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008151s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004368s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017831s ]
+
+[ 2017-06-05T21:58:09+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008960s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006242s ]
+
+[ 2017-06-05T21:59:07+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000509s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005192s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010229s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003715s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.115067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006640s ]
+
+[ 2017-06-05T21:59:11+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000478s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007830s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001234s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007115s ]
+
+[ 2017-06-05T22:00:00+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000554s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010094s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0622s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003851s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.104510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013015s ]
+
+[ 2017-06-05T22:01:07+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000510s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007522s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0601s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003770s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002777s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006382s ]
+
+[ 2017-06-05T22:01:59+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007942s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0687s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001331s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.190340s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006472s ]
+
+[ 2017-06-05T22:02:31+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006257s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009470s ]
+
+[ 2017-06-05T22:03:27+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000583s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005714s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006448s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0436s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001399s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003955s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009611s ]
+
+[ 2017-06-05T22:03:35+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000790s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007426s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001846s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004815s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013943s ]
+
+[ 2017-06-05T22:06:19+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000704s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010605s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001429s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004799s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003605s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010587s ]
+
+[ 2017-06-05T22:07:13+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000853s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010703s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011826s ]
+
+[ 2017-06-05T22:07:26+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000482s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008423s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003815s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008720s ]
+
+[ 2017-06-05T22:07:34+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000544s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009236s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002491s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005523s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009120s ]
+
+[ 2017-06-05T22:08:03+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000812s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008962s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0983s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013725s ]
+
+[ 2017-06-05T22:08:47+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000580s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012737s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001934s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009478s ]
+
+[ 2017-06-05T22:09:11+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000498s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008215s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0369s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004647s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005256s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010286s ]
+
+[ 2017-06-05T22:17:17+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/buyStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000479s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009918s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001541s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004485s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010392s ]
+
+[ 2017-06-05T22:17:42+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000789s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011327s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0182s ]
+SQL: SELECT * FROM `stock_stock` WHERE `stockid` = '000856' LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003576s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002957s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006677s ]
+
+[ 2017-06-05T22:17:47+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000466s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006034s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `stock_stock` WHERE `stockid` = '000856' LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001347s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003949s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002762s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005609s ]
+
+[ 2017-06-05T22:18:11+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000686s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006765s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008065s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_stock` WHERE `stockid` = '000856' LIMIT 1   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005179s ]
+
+[ 2017-06-05T22:18:31+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSell
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000587s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006853s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0496s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `stock_stock` WHERE `stockid` = '000856' LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006924s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005994s ]
+
+[ 2017-06-05T22:18:35+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000477s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026600s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003780s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007523s ]
+
+[ 2017-06-05T22:18:37+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/revoke
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000623s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007893s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_commission` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `stock_commission` INNER JOIN stock_stock on stock_stock.stockid = stock_commission.stockid  WHERE `stockholderid` = '1' AND `state` = '2'  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003839s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007158s ]
+
+[ 2017-06-05T22:18:41+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSearch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000755s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006815s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Undefined variable: check_stockholder C:\xampp\htdocs\StockTradingSystem-3\Application\Home\Controller\IndexController.class.php 第 361 行.
+
+[ 2017-06-05T22:19:04+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSearch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000512s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005703s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0402s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `stock_stock` WHERE (  `stockname` = '000856' OR `stockid` = '000856' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008268s ]
+
+[ 2017-06-05T22:19:09+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007218s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.005503s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008857s ]
+
+[ 2017-06-05T22:19:13+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSearch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000469s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006456s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `stock_stock` WHERE (  `stockname` = '000856' OR `stockid` = '000856' ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006273s ]
+
+[ 2017-06-05T22:19:16+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSearch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000474s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005478s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `stock_stock` WHERE (  `stockname` = '00085' OR `stockid` = '00085' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001461s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004972s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005177s ]
+
+[ 2017-06-05T22:19:34+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/addSearch
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000757s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008712s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `stock_stock` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `stock_stock` WHERE (  `stockname` = '冀东装备' OR `stockid` = '冀东装备' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007062s ]
+
+[ 2017-06-05T22:20:06+08:00 ] ::1 /stocktradingsystem-3/index.php/Home/Index/sellStock
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000471s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010731s ]
+SQL: SHOW COLUMNS FROM `stock_personal_stock_account` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `stock_stockholder` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `stock_stockholder` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `stock_personal_stock_account` WHERE `userid` = 1 LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003731s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004219s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007598s ]
+

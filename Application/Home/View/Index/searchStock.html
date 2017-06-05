@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>股票交易系统——个人中心</title>
+        <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="__PUBLIC__/css/dashboard.css">
+        <style type="text/css">
+            .warning{
+                height:34px; 
+                padding: 5px;
+                color: #A0A0A0;
+            }
+        </style>
+    </head>
+
+  <body id="index">
+    <include file="./Application/Home/View/Public/header.html" />
+    <include file="./Application/Home/View/Public/menu.html" />
+
+  <script type="text/javascript">
+    window.onload=function(){
+      var item=document.getElementById("menu");
+      var itemss=item.getElementsByTagName("li");
+      itemss[1].className+="active";
+    }
+  </script>
+ </body>
+ </html>

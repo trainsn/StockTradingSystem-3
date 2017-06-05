@@ -356,4 +356,19 @@ class IndexController extends Controller {
 		$this->assign('personalAccount_info', $personalAccount_info);
 		$this->display();
 	}
+
+	function addSearch(){
+		$this->check_stockholder();
+
+		$stock = M('stock');
+		$where['stockname'] = $_POST['stockid'];
+		$where['stockid'] = $_POST['stockid'];
+		$where['_logic'] = 'or';
+		$condition['_complex'] = $where;
+		if (!$stock_info = $stock->where($condition)->find()){
+			$this->error("不存在该股票");
+		}
+
+		var_dump($stock_info);
+	}
 }

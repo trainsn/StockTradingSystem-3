@@ -67,6 +67,11 @@
           <li><a href="/stocktradingsystem-3/index.php/Home/Index/showDeal"><i class="fa fa-circle-o"></i> 历史成交</a></li>
         </ul>
       </li>
+      <li>
+        <a href="/stocktradingsystem-3/index.php/Home/Index/searchStock">
+          <i class="fa fa-search"></i> <span>  个股信息</span>
+        </a>
+      </li>
     </ul>
     </nav>
 </div>
