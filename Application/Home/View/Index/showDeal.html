@@ -100,7 +100,7 @@
     arr["time"] = new Array();
 
     <volist name="deal_info" id="vi">
-      arr["stock"].push("{<$vi.stockname>}");
+      arr["stock"].push("{<$vi.name>}");
       arr["operation"].push("{<$vi.operation>}");
       arr["price"].push("{<$vi.deal_price>}");
       arr["amount"].push("{<$vi.dealed_amount>}");

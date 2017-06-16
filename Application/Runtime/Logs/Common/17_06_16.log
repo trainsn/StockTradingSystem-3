@@ -1,0 +1,36 @@
+[ 2017-06-16T20:37:55+08:00 ] ::1 /stocktradingsystem-3/index.php/Stock/detailstock/code/000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010162s ]
+ERR: 无法加载模块:Stock
+
+[ 2017-06-16T20:38:24+08:00 ] ::1 /stocktradingsystem-3/index.php/Stock/detailstock/code/000001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001780s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010571s ]
+ERR: 无法加载模块:Stock
+
+[ 2017-06-16T20:40:12+08:00 ] ::1 /stocktradingsystem-3/index.php/Stock/detailstock/code/000001.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000771s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009965s ]
+ERR: 无法加载模块:Stock
+
+[ 2017-06-16T21:03:24+08:00 ] ::1 /stocktradingsystem-3/index.php/stocktradingsystem-3/index.php/Home/Stock/detailstockIndex/code/000001.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000842s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012602s ]
+ERR: 无法加载模块:Stocktradingsystem-3
+
+[ 2017-06-16T21:04:55+08:00 ] ::1 /stocktradingsystem-3/index.php/stocktradingsystem-3/index.php/Home/Stock/detailstockIndex/code/000001.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000767s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010506s ]
+ERR: 无法加载模块:Stocktradingsystem-3
+
+[ 2017-06-16T21:04:57+08:00 ] ::1 /stocktradingsystem-3/index.php/stocktradingsystem-3/index.php/Home/Stock/detailstockIndex/code/000001.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000539s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024862s ]
+ERR: 无法加载模块:Stocktradingsystem-3
+

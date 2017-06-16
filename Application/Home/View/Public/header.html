@@ -16,6 +16,7 @@
     <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
     <li><a><?php echo $_SESSION['username']?>，今天是<?php echo date('Y-m-d', time())?></a></li>
+    <li><a href="__APP__/Home/Stock/search">返回首页</a></li>
     <li><a href="javascript:ms=confirm('确定退出');ms?location.href='__APP__/Home/Login/logout':history.go(0)" >退出登录</a></li>
     </ul>
    </div>

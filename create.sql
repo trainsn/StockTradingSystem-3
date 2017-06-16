@@ -27,7 +27,7 @@ create table stock_staff
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_stock;
-create table stock_stock #股票信息
+/*create table stock_stock #股票信息
 (
 	stockid varchar(8) not null,
 	stockname varchar(20) not null,
@@ -41,6 +41,25 @@ create table stock_stock #股票信息
 	email varchar(20),
 	totalStockNum int,
 	primary key (stockid)
+)DEFAULT CHARSET=utf8;*/
+CREATE TABLE `stock_stock` (
+  `index` bigint(20) DEFAULT NULL,
+  `code` varchar(6),
+  `name` text,
+  `changepercent` double DEFAULT NULL,
+  `trade` double DEFAULT NULL,
+  `open` double DEFAULT NULL,
+  `high` double DEFAULT NULL,
+  `low` double DEFAULT NULL,
+  `settlement` double DEFAULT NULL,
+  `volume` bigint(20) DEFAULT NULL,
+  `turnoverratio` double DEFAULT NULL,
+  `amount` bigint(20) DEFAULT NULL,
+  `per` double DEFAULT NULL,
+  `pb` double DEFAULT NULL,
+  `mktcap` double DEFAULT NULL,
+  `nmc` double DEFAULT NULL,
+  primary key (code)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_personal_stock_account;
@@ -73,13 +92,13 @@ drop table if exists stock_hold_stock_info;
 create table stock_hold_stock_info #持仓信息
 (
 	stockholderid int not null,
-	stockid varchar(8) not null,
+	stockid varchar(6) not null,
 	amount_total int not null,
 	amount_usable int not null,
 	cost_price double,
 	primary key (stockholderid, stockid),
 	foreign key (stockholderid) references stock_stockholder(stockholderid),
-	foreign key (stockid) references stock_stock(stockid)
+	foreign key (stockid) references stock_stock(code)
 )DEFAULT CHARSET=utf8;
 
 drop table if exists stock_commission;

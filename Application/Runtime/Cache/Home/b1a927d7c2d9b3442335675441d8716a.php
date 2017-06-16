@@ -72,6 +72,22 @@
 </div>
 </div>
 </div>
+s
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+   <div class="col-sm-12" style="boder:3px;">
+    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addSearch" method="post" name="myform" id="myform">
+      <div class="form-group">
+        <label class="col-sm-6 col-lg-4 control-label">请输入股票代码或名称</label>
+        <div class="col-sm-4 col-lg-4">
+        <input type="text" class="form-control" id="stockid" name="stockid">
+        </div>
+        <div class="col-sm-4 col-lg-4">
+        <input type="submit" class="btn btn-primary" name="submit" value="个股查询" class="publish">
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
 
   <script type="text/javascript" src="/stocktradingsystem-3/Public/js/sidenav.js"></script>
   <script>$('[data-sidenav]').sidenav();</script>
@@ -88,7 +104,7 @@
         </tr>
        </thead>
        <tbody>
-        <?php if(is_array($deal_info)): $i = 0; $__LIST__ = $deal_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$deal_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["stockname"]); ?>(<?php echo ($deal_info["stockid"]); ?>)</td>
+        <?php if(is_array($deal_info)): $i = 0; $__LIST__ = $deal_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$deal_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["name"]); ?>(<?php echo ($deal_info["stockid"]); ?>)</td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["operation"]); ?></td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["deal_price"]); ?></td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($deal_info["dealed_amount"]); ?></td>

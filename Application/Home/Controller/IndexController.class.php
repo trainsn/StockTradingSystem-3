@@ -22,7 +22,6 @@ class IndexController extends Controller {
 
 	function index(){	
 		$this->redirect('showPersonalAccount');
-
 	}
 
 	function check_stockholder(){
@@ -62,7 +61,7 @@ class IndexController extends Controller {
 		$this->check_stockholder();
 
 		$stock = M('stock');
-		$condition['stockid'] = $_POST['stockid'];
+		$condition['code'] = $_POST['stockid'];
 		if (!$stock->where($condition)->find()){
 			$this->error("委托失败，不存在该股票代码");
 		}
@@ -80,7 +79,7 @@ class IndexController extends Controller {
 		$condition_personal['userid'] = $_SESSION['userid'];
 		$personalAccount_info  = $personalAccount->where($condition_personal)->find();
 
-		if ( $_POST['commission_account'] % 100 != 0){
+		if ( $_POST['commission_faccount'] % 100 != 0){
 			$this->error('买进时不能以碎股进行委托，最小单位是1手(100股)');
 		}else if ($_POST['commission_account'] * $_POST['commission_price'] > $personalAccount_info['bankroll_usable']){
 			$this->error('总价超过可用资金');
@@ -111,7 +110,7 @@ class IndexController extends Controller {
 		$this->check_stockholder();
 
 		$stock = M('stock');
-		$condition_stock['stockid'] = $_POST['stockid'];
+		$condition_stock['code'] = $_POST['stockid'];
 		if (!$stock->where($condition_stock)->find()){
 			$this->error("委托失败，不存在该股票代码");
 		}
@@ -127,7 +126,7 @@ class IndexController extends Controller {
 
 		$hold = M('hold_stock_info');
 		$condition_hold['stockholderid'] = $sh['stockholderid'];
-		$hold_info = $hold->join('stock_stock')->where($condition_hold)->find();
+		$hold_info = $hold->join('stock_stock on stock_hold_stock_info.stockid = stock_stock.code')->where($condition_hold)->find();
 
 		//var_dump($hold_info);
 		if ($hold_info['amount_usable'] <  $_POST['commission_account']){
@@ -162,7 +161,7 @@ class IndexController extends Controller {
 		$commission = M('commission');
 		$condition_com['stockholderid'] = $sh['stockholderid'];
 		$condition_com['state'] = '2';
-		$commission_info = $commission->join('stock_stock on stock_stock.stockid = stock_commission.stockid')->where($condition_com)->select();
+		$commission_info = $commission->join('stock_stock on stock_stock.code = stock_commission.stockid')->where($condition_com)->select();
 
 		for ($i=0;$i<count($commission_info);$i++){
 			switch($commission_info[$i]['direction']){
@@ -207,7 +206,7 @@ class IndexController extends Controller {
 
 		if ($commission_info['direction'] == '1'){	//撤销卖出 需要修改持仓信息 添加可处理股票	
 			$hold = M('hold_stock_info');
-			$condition_hold['stockholderid'] = $commission_info['stockholderid'];
+			$condition_hold['stockholderid'] =  $commission_info['stockholderid'];
 			$hold->where($condition_hold)->SetInc('amount_usable', $commission_info['commission_account']);
 		}else if ($commission_info['direction'] == '0'){	//撤销买入 需要修改资金账户信息
 			$personalAccount = M('personal_stock_account');
@@ -233,7 +232,8 @@ class IndexController extends Controller {
 
 		$hold = M('hold_stock_info');
 		$condition_hold['stockholderid'] = $sh['stockholderid'];
-		$hold_info = $hold->join('stock_stock')->where($condition_hold)->select();
+		$hold_info = $hold->join('stock_stock on stock_hold_stock_info.stockid = stock_stock.code')->where($condition_hold)->select();
+
 
 		$this->assign('export',count($hold_info));
 		$this->assign('hold_info',$hold_info);
@@ -252,7 +252,7 @@ class IndexController extends Controller {
 		$commission = M('commission');
 		$condition_com['stockholderid'] = $sh['stockholderid'];
 		$condition_com['commission_time'] = array('egt', $current_day);
-		$commission_info = $commission->join('stock_stock on stock_stock.stockid = stock_commission.stockid')->where($condition_com)->select();
+		$commission_info = $commission->join('stock_stock on stock_stock.code = stock_commission.stockid')->where($condition_com)->select();
 
 		for ($i=0;$i<count($commission_info);$i++){
 			switch($commission_info[$i]['direction']){
@@ -297,7 +297,7 @@ class IndexController extends Controller {
 		$condition_deal['deal_time'] = array('egt', $current_day);
 		//var_dump($condition_deal);
 
-		$deal_info = $deal->join('stock_commission on (stock_commission.commissionid = stock_deal.in_commission) or (stock_commission.commissionid = stock_deal.out_commission)')->join('stock_stock')->where($condition_deal)->select();
+		$deal_info = $deal->join('stock_commission on (stock_commission.commissionid = stock_deal.in_commission) or (stock_commission.commissionid = stock_deal.out_commission)')->join('stock_stock on stock_stock.code = stock_deal.stockid')->where($condition_deal)->select();
 		//var_dump($deal_info);
 
 		for ($i=0;$i<count($deal_info);$i++){
@@ -325,7 +325,7 @@ class IndexController extends Controller {
 		$condition_deal['stockholderid'] = $sh['stockholderid'];
 		//var_dump($condition_deal);
 
-		$deal_info = $deal->join('stock_commission on (stock_commission.commissionid = stock_deal.in_commission) or (stock_commission.commissionid = stock_deal.out_commission)')->join('stock_stock')->where($condition_deal)->select();
+		$deal_info = $deal->join('stock_commission on (stock_commission.commissionid = stock_deal.in_commission) or (stock_commission.commissionid = stock_deal.out_commission)')->join('stock_stock on stock_stock.code = stock_deal.stockid')->where($condition_deal)->select();
 		//var_dump($deal_info);
 
 		for ($i=0;$i<count($deal_info);$i++){
@@ -361,14 +361,15 @@ class IndexController extends Controller {
 		$this->check_stockholder();
 
 		$stock = M('stock');
-		$where['stockname'] = $_POST['stockid'];
-		$where['stockid'] = $_POST['stockid'];
+		$where['name'] = $_POST['stockid'];
+		$where['code'] = $_POST['stockid'];
 		$where['_logic'] = 'or';
 		$condition['_complex'] = $where;
 		if (!$stock_info = $stock->where($condition)->find()){
 			$this->error("不存在该股票");
 		}
 
-		var_dump($stock_info);
+		//var_dump($stock_info);
+		$this->redirect('Stock/detailstockIndex',array('code' => $stock_info['code']));
 	}
 }

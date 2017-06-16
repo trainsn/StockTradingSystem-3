@@ -67,48 +67,25 @@
           <li><a href="/stocktradingsystem-3/index.php/Home/Index/showDeal"><i class="fa fa-circle-o"></i> 历史成交</a></li>
         </ul>
       </li>
-      <li>
-        <a href="/stocktradingsystem-3/index.php/Home/Index/searchStock">
-          <i class="fa fa-search"></i> <span>  个股信息</span>
-        </a>
-      </li>
     </ul>
     </nav>
 </div>
 </div>
 </div>
-
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-    <div class="table-responsive">
-    <table class="table col-sm-12 table-bordered">
-    <tr>
-    <td class="col-sm-7 col-md-8" style="vertical-align: middle;" />
+s
+  <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
    <div class="col-sm-12" style="boder:3px;">
-    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addSell" method="post" name="myform" id="myform" onsubmit="return Validate();">
-      <!--<div class="form-group">
-        <label class="col-sm-1 col-lg-2 control-label">股东代码</label>
-        <div class="col-sm-3 col-lg-3">
-        <select class="form-control" name='suit'>
-           <option value="0">沪A</option>
-           <option value="1">深A</option>
-        </select>
-      </div>
-      </div>-->
+    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addSearch" method="post" name="myform" id="myform">
       <div class="form-group">
-        <label class="col-sm-3 col-lg-2 control-label">证券代码</label>
-        <div class="col-sm-6">
-        <input type="text" class="form-control" id="stockid" name="stockid" onblur="CheckStockid(this.value)">
+        <label class="col-sm-6 col-lg-4 control-label">请输入股票代码或名称</label>
+        <div class="col-sm-4 col-lg-4">
+        <input type="text" class="form-control" id="stockid" name="stockid">
         </div>
-        <div class="col-sm-4 warning">
-        <p id="stockidInfo"></p>
+        <div class="col-sm-4 col-lg-4">
+        <input type="submit" class="btn btn-primary" name="submit" value="个股查询" class="publish">
         </div>
       </div>
     </form>
-   </div>
- </td>
-
- </tr>
- </table>
   </div>
   </div>
 
@@ -127,7 +104,7 @@
         </tr>
        </thead>
        <tbody>
-        <?php if(is_array($hold_info)): $i = 0; $__LIST__ = $hold_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hold_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["stockname"]); ?>(<?php echo ($hold_info["stockid"]); ?>)</td>
+        <?php if(is_array($hold_info)): $i = 0; $__LIST__ = $hold_info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hold_info): $mod = ($i % 2 );++$i;?><tr><td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["name"]); ?>(<?php echo ($hold_info["stockid"]); ?>)</td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["amount_total"]); ?></td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["amount_usable"]); ?></td>
               <td style="text-align: center;vertical-align: middle"><?php echo ($hold_info["cost_price"]); ?></td>

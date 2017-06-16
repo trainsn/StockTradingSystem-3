@@ -19,11 +19,11 @@
     <h2 class="col-md-offset-2" style="margin-top: 1em;"><img src="/stocktradingsystem-3/Public/logo2.png" height="30px;" /> 股票交易系统</h2>
     <hr/>
     <h3 class="col-md-offset-2" style="margin-bottom: 1em;">用户注册<small>以下均为必填项</small></h3>
-        <form novalidate action='/stocktradingsystem-3/index.php/Home/Register/doReg' class="form-horizontal col-md-offset-1" role="form" method="post" name="myForm"  onsubmit="return validate()">
+        <form novalidate action='/stocktradingsystem-3/index.php/Home/Register/doReg' class="form-horizontal col-md-offset-1" role="form" method="post" name="myForm"  autocomplete="off" onsubmit="return validate()">
         <div class="form-group">
           <label class="control-label col-sm-2">用户名</label>
           <div class="col-sm-5">
-          <input type="text" class="form-control" aria-describedby="sizing-addon1" name='username' maxlength="20" onblur="checkUserName()">
+          <input type="text" class="form-control" aria-describedby="sizing-addon1" name='username' maxlength="20" disableautocomplete autocomplete="off" onblur="checkUserName()">
           </div>
           <div class="col-sm-4 warning">
             <span id="nameInfo"></span>
@@ -32,7 +32,7 @@
         <div class="form-group">
         <label class="control-label col-sm-2">密码</label>
         <div class="col-sm-5">
-        <input type="password" class="form-control" aria-describedby="sizing-addon1" name="password" maxlength="16" onblur="checkPassword()">
+        <input type="text" class="form-control" aria-describedby="sizing-addon1" name="password" maxlength="16" onblur="checkPassword()" onfocus="this.type='password'">
         </div>
         <div class="col-sm-4 warning">
             <span id="passwordInfo"></span>
@@ -41,7 +41,7 @@
         <div class="form-group">
         <label class="control-label col-sm-2">确认密码</label>
         <div class="col-sm-5">
-        <input type="password" class="form-control" aria-describedby="sizing-addon1" name="repassword" onblur="recheckqwd()">
+        <input type="text" class="form-control" aria-describedby="sizing-addon1" name="repassword" onblur="recheckqwd()" onfocus="this.type='password'">
         </div>
         <div class="col-sm-4 warning">
             <span id="repasswordInfo"></span>
@@ -50,7 +50,7 @@
         <div class="form-group">
         <label class="control-label col-sm-2">邮箱</label>
         <div class="col-sm-5">
-        <input type="email" class="form-control"  aria-describedby="sizing-addon1" name="email" onblur="checkemail()">
+        <input type="text" class="form-control"  aria-describedby="sizing-addon1" name="email" disableautocomplete autocomplete="off" onblur="checkemail()">
         </div>
         <div class="col-sm-4 warning">
             <span id="emailInfo"></span>

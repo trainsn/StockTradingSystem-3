@@ -1,0 +1,338 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo ($result["name"]); ?></title>
+	<script src="/stocktradingsystem-3/Public/js/jquery.js"></script>
+	<script src="/stocktradingsystem-3/Public/js/echarts.min.js"></script>
+	<style>
+	body{background: #fafafa}
+	.titlec {
+	width: auto; 
+	height: auto; 
+	background-color: #f0f0fc;
+	text-align: center;
+	font-size: 30px;
+	}
+	.titlen {
+	width: auto; 
+	height: auto; 
+	background-color: #fcf0fc;
+	text-align: center;
+	font-size: 40px;
+	}
+	.detail
+	{
+	width: auto; 
+	height: auto; 
+	font-size: 25px;
+	float:left;
+	}
+	.l2{background:#fceffc;font-size: 20px; color:#000000;}
+	.l1{background:#ececfc;font-size: 20px; color:#000000;}
+	</style>
+</head>
+<body onload="initUl()">
+	<div id="code" class="titlec">
+	<?php echo ($result["code"]); ?>
+	</div>
+	<div id="name" class="titlen">
+	<?php echo ($result["name"]); ?>
+    </div>    
+	<div id="main">
+    <div id="left" style="width: 900px;height:675px; float:left;"></div>
+	<div id="right">
+	<ul>
+				<li>现价：&emsp;&emsp;&emsp;&emsp;<?php echo ($result["trade"]); ?></li>
+				<li>开盘：&emsp;&emsp;&emsp;&emsp;<?php echo ($result["open"]); ?></li>
+                <li>昨日收盘：&emsp;&emsp;<?php echo ($result["settlement"]); ?></li>
+                <li>最低：&emsp;&emsp;&emsp;&emsp;<?php echo ($result["low"]); ?></li>
+                <li>最高：&emsp;&emsp;&emsp;&emsp;<?php echo ($result["high"]); ?></li>
+                <li>涨幅：&emsp;&emsp;&emsp;&emsp;<span id='chpr'><?php echo ($result["changepercent"]); ?></span></li>
+				<li>成交量：&emsp;&emsp;&emsp;<?php echo ($result["volume"]); ?></li>
+	</ul>
+	</div>
+	</div>
+<script type="text/javascript">
+function initUl(){
+var a=document.getElementsByTagName('ul');
+for (var i=0;i<a.length;i++){
+  var v=document.getElementsByTagName('li');
+  var ii=1;
+  for (var j=0;j<v.length;j++){
+    if (v[j].parentNode==a[i]){
+      if (ii++%2==0){
+        v[j].className="l2";
+      }
+      else{
+        v[j].className="l1";
+      }
+    }
+  }
+}
+var b=document.getElementById('chpr');
+	var k = <?php echo ($result["changepercent"]); ?>;
+	if (k>0) {b.style.color='#ff0000';}
+	else {b.style.color='#00ff00';}
+}
+</script>
+    <script type="text/javascript">
+var myChart = echarts.init(document.getElementById('left'));
+function splitData(rawData) {
+    var categoryData = [];
+    var values = [];
+    var volumns = [];
+    for (var i = 0; i < rawData.length; i++) {
+        categoryData.push(rawData[i].splice(0, 1)[0]);
+        values.push(rawData[i]);
+        volumns.push(rawData[i][4]);
+    }
+    return {
+        categoryData: categoryData,
+        values: values,
+        volumns: volumns
+    };
+}
+
+function calculateMA(dayCount, data) {
+    var result = [];
+    for (var i = 0, len = data.values.length; i < len; i++) {
+        if (i < dayCount) {
+            result.push('-');
+            continue;
+        }
+        var sum = 0;
+        for (var j = 0; j < dayCount; j++) {
+            sum += data.values[i - j][1];
+        }
+        result.push(+(sum / dayCount).toFixed(3));
+    }
+    return result;
+}
+
+$.getJSON("/stocktradingsystem-3/Public/json/<?php echo ($code); ?>.json", function (rawData) {
+
+    var data = splitData(rawData);
+
+    myChart.setOption(option = {
+        backgroundColor: '#eee',
+        animation: false,
+        legend: {
+            bottom: 10,
+            left: 'center',
+            data: ['Dow-Jones index', 'MA5', 'MA10', 'MA20', 'MA30']
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross'
+            },
+            backgroundColor: 'rgba(245, 245, 245, 0.8)',
+            borderWidth: 1,
+            borderColor: '#ccc',
+            padding: 10,
+            textStyle: {
+                color: '#000'
+            },
+            position: function (pos, params, el, elRect, size) {
+                var obj = {top: 10};
+                obj[['left', 'right'][+(pos[0] < size.viewSize[0] / 2)]] = 30;
+                return obj;
+            },
+            extraCssText: 'width: 170px'
+        },
+        axisPointer: {
+            link: {xAxisIndex: 'all'},
+            label: {
+                backgroundColor: '#777'
+            }
+        },
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: false
+                },
+                brush: {
+                    type: ['lineX', 'clear']
+                }
+            }
+        },
+        brush: {
+            xAxisIndex: 'all',
+            brushLink: 'all',
+            outOfBrush: {
+                colorAlpha: 0.1
+            }
+        },
+        grid: [
+            {
+                left: '10%',
+                right: '8%',
+                height: '50%'
+            },
+            {
+                left: '10%',
+                right: '8%',
+                top: '63%',
+                height: '16%'
+            }
+        ],
+        xAxis: [
+            {
+                type: 'category',
+                data: data.categoryData,
+                scale: true,
+                boundaryGap : false,
+                axisLine: {onZero: false},
+                splitLine: {show: false},
+                splitNumber: 20,
+                min: 'dataMin',
+                max: 'dataMax',
+                axisPointer: {
+                    z: 100
+                }
+            },
+            {
+                type: 'category',
+                gridIndex: 1,
+                data: data.categoryData,
+                scale: true,
+                boundaryGap : false,
+                axisLine: {onZero: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+                axisLabel: {show: false},
+                splitNumber: 20,
+                min: 'dataMin',
+                max: 'dataMax',
+                axisPointer: {
+                    label: {
+                        formatter: function (params) {
+                            var seriesValue = (params.seriesData[0] || {}).value;
+                            return params.value
+                            + (seriesValue != null
+                                ? '\n' + echarts.format.addCommas(seriesValue)
+                                : ''
+                            );
+                        }
+                    }
+                }
+            }
+        ],
+        yAxis: [
+            {
+                scale: true,
+                splitArea: {
+                    show: true
+                }
+            },
+            {
+                scale: true,
+                gridIndex: 1,
+                splitNumber: 2,
+                axisLabel: {show: false},
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false}
+            }
+        ],
+        dataZoom: [
+            {
+                type: 'inside',
+                xAxisIndex: [0, 1],
+                start: 98,
+                end: 100
+            },
+            {
+                show: true,
+                xAxisIndex: [0, 1],
+                type: 'slider',
+                top: '85%',
+                start: 98,
+                end: 100
+            }
+        ],
+        series: [
+            {
+                name: 'Dow-Jones index',
+                type: 'candlestick',
+                data: data.values,
+                itemStyle: {
+                    normal: {
+                        borderColor: null,
+                        borderColor0: null
+                    }
+                },
+                tooltip: {
+                    formatter: function (param) {
+                        param = param[0];
+                        return [
+                            '日期: ' + param.name + '<hr size=1 style="margin: 3px 0">',
+                            '开盘: ' + param.data[0] + '<br/>',
+                            '收盘: ' + param.data[1] + '<br/>',
+                            '最低: ' + param.data[2] + '<br/>',
+                            '最高: ' + param.data[3] + '<br/>'
+                        ].join('');
+                    }
+                }
+            },
+            {
+                name: 'MA5',
+                type: 'line',
+                data: calculateMA(5, data),
+                smooth: true,
+                lineStyle: {
+                    normal: {opacity: 0.5}
+                }
+            },
+            {
+                name: 'MA10',
+                type: 'line',
+                data: calculateMA(10, data),
+                smooth: true,
+                lineStyle: {
+                    normal: {opacity: 0.5}
+                }
+            },
+            {
+                name: 'MA20',
+                type: 'line',
+                data: calculateMA(20, data),
+                smooth: true,
+                lineStyle: {
+                    normal: {opacity: 0.5}
+                }
+            },
+            {
+                name: 'MA30',
+                type: 'line',
+                data: calculateMA(30, data),
+                smooth: true,
+                lineStyle: {
+                    normal: {opacity: 0.5}
+                }
+            },
+            {
+                name: 'Volumn',
+                type: 'bar',
+                xAxisIndex: 1,
+                yAxisIndex: 1,
+                data: data.volumns
+            }
+        ]
+    }, true);
+
+    myChart.dispatchAction({
+        type: 'brush',
+        areas: [
+            {
+                brushType: 'lineX',
+                coordRange: ['2017-01-03', '2017-05-30'],
+                xAxisIndex: 0
+            }
+        ]
+    });
+});
+    </script>
+</body>
+</html>
