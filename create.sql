@@ -44,7 +44,7 @@ drop table if exists stock_stock;
 )DEFAULT CHARSET=utf8;*/
 CREATE TABLE `stock_stock` (
   `index` bigint(20) DEFAULT NULL,
-  `code` varchar(6),
+  `code` text,
   `name` text,
   `changepercent` double DEFAULT NULL,
   `trade` double DEFAULT NULL,
@@ -58,9 +58,9 @@ CREATE TABLE `stock_stock` (
   `per` double DEFAULT NULL,
   `pb` double DEFAULT NULL,
   `mktcap` double DEFAULT NULL,
-  `nmc` double DEFAULT NULL,
-  primary key (code)
-)DEFAULT CHARSET=utf8;
+  `nmc` double DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 
 drop table if exists stock_personal_stock_account;
 create table stock_personal_stock_account #资金账户
@@ -112,6 +112,7 @@ create table stock_commission
 	commission_account int,
 	stockholderid int,
 	state enum('0','1','2'), #0 已撤销 1 已成交 2 已提交
+	remain int,
 	primary key (commissionid),
 	foreign key (stockholderid) references stock_stockholder(stockholderid)
 )DEFAULT CHARSET=utf8;
@@ -132,5 +133,12 @@ create table stock_deal
 	foreign key (out_commission) references stock_commission(commissionid)
 )DEFAULT CHARSET=utf8;
 
+drop table if exists stock_price;
+create table stock_price
+(
+	stockid varchar(8) not null,
+	open_close_price integer,
+	time int
+)DEFAULT CHARSET=utf8;
 
 

@@ -36,6 +36,7 @@
     <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
     <li><a><?php echo $_SESSION['username']?>，今天是<?php echo date('Y-m-d', time())?></a></li>
+    <li><a href="/stocktradingsystem-3/index.php/Home/Stock/search">返回首页</a></li>
     <li><a href="javascript:ms=confirm('确定退出');ms?location.href='/stocktradingsystem-3/index.php/Home/Login/logout':history.go(0)" >退出登录</a></li>
     </ul>
    </div>
@@ -81,12 +82,11 @@
 </div>
 </div>
 </div>
-s
   <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
    <div class="col-sm-12" style="boder:3px;">
-    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addSearch" method="post" name="myform" id="myform">
+    <form class="form-horizontal" action="/stocktradingsystem-3/index.php/Home/Index/addSearch" method="post" name="myform" id="myform" onsubmit="return checkbox();">
       <div class="form-group">
-        <label class="col-sm-6 col-lg-4 control-label">请输入股票代码或名称</label>
+        <label class="col-sm-6 col-lg-4 control-label">请输入要查询的股票代码或者名称</label>
         <div class="col-sm-4 col-lg-4">
         <input type="text" class="form-control" id="stockid" name="stockid">
         </div>
@@ -98,6 +98,19 @@ s
   </div>
   </div>
 
+        <script type="text/javascript">
+            function checkbox(){
+                value = document.getElementById('stockid').value;
+                if(value == ''|| value == null)
+                {
+                   alert('输入不能为空');
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
   <script type="text/javascript" src="/stocktradingsystem-3/Public/js/sidenav.js"></script>
   <script>$('[data-sidenav]').sidenav();</script>
 

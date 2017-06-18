@@ -3,10 +3,10 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>股票交易系统</title>
-        <link rel="stylesheet" href="/stocktradingsystem-3/Public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/StockTradingSystem-3/Public/css/bootstrap.min.css">
          <!-- jQuery文件 -->
-        <script src="/stocktradingsystem-3/Public/js/jquery-1.12.3.min.js"></script>
-        <script src="/stocktradingsystem-3/Public/js/vlidate.js"></script>
+        <script src="/StockTradingSystem-3/Public/js/jquery-1.12.3.min.js"></script>
+        <script src="/StockTradingSystem-3/Public/js/vlidate.js"></script>
         <style type="text/css">
             .warning{
                 padding: 5px;
@@ -16,10 +16,10 @@
     </head>
     <body>
         <div class="container">
-    <h2 class="col-md-offset-2" style="margin-top: 1em;"><img src="/stocktradingsystem-3/Public/logo2.png" height="30px;" /> 股票交易系统</h2>
+    <h2 class="col-md-offset-2" style="margin-top: 1em;"><img src="/StockTradingSystem-3/Public/logo2.png" height="30px;" /> 股票交易系统</h2>
     <hr/>
     <h3 class="col-md-offset-2" style="margin-bottom: 1em;">用户注册<small>以下均为必填项</small></h3>
-        <form novalidate action='/stocktradingsystem-3/index.php/Home/Register/doReg' class="form-horizontal col-md-offset-1" role="form" method="post" name="myForm"  autocomplete="off" onsubmit="return validate()">
+        <form novalidate action='/StockTradingSystem-3/index.php/Home/Register/doReg' class="form-horizontal col-md-offset-1" role="form" method="post" name="myForm"  autocomplete="off" onsubmit="return validate()">
         <div class="form-group">
           <label class="control-label col-sm-2">用户名</label>
           <div class="col-sm-5">

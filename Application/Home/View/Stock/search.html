@@ -11,9 +11,86 @@
             padding: 5px;
             color: #A0A0A0;
         }
+        #head{
+            height: 90px;
+            width: 774px;
+            background-color: #f5f5f5;
+            margin-left:270px;
+        }
+        #checklogin{
+            float:right;
+            text-align: center;
+            line-height: 30px;
+            height: 29px;
+            position: absolute;
+            left:690px;
+        }
+        #checklogin2{
+            float:right;
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+            left:870px;
+        }
+        .headli{
+            float: left;
+            list-style: none;
+            margin-left: 20px;
+        }
+        a.login:link{
+            color:#000000;
+        }
+        a.login:hover{
+            color:#FF0000;
+            text-decoration: none;
+        }
+        #last{
+            height: 120px;
+            background-color: rgba(22, 43, 62, 0.19);
+            width: 774px;
+            margin-left:270px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        span{
+            margin-bottom: 10px;
+        }
+        #pi{
+            height: 30px;
+            width: auto;
+            text-align: center;
+            position: relative;
+            margin-left: 120px;
+            float:left;
+            margin-top: 30px;
+            font-family: "微软雅黑";
+        }
     </style>
 </head>
 <body id="index" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="head">
+    <img src="__PUBLIC__/head.jpg" height="80px" width="80px" style="float:left;">
+    <div id="pi">
+        <h2><strong>让我们成为你的最佳投资助手</strong></h2>
+    </div>
+       <if condition="$_SESSION['username']">
+           <div id="checklogin">
+           <ul>
+               <li class="headli"><a href="__APP__/Home/Index/showPersonalAccount"><?php echo $_SESSION['username']?></a>，今天是<?php echo date('Y-m-d', time())?></li>
+               <li class="headli"><a href="javascript:ms=confirm('确定退出');ms?location.href='__APP__/Home/Login/logout':history.go(0)" >退出登录</a></li>
+           </ul>
+           </div>
+           <else/>
+           <div id="checklogin2">
+        <ul>
+            <li class="headli"><a href="__APP__/Home/Login/login" class="login">请登录</a></li>
+            <li class="headli"><a href="__APP__/Home/Register/reg" class="login">注册</a></li>
+        </ul>
+           </div>
+       </if>
+    </div>
+<hr style="height:1px;border:none;border-top:1px solid #555555;width: 60%" align="center"; />
+<div>
 <table width="774" border="0" align="center" cellpadding="0" cellspacing="0">
                     <form class="form-horizontal" action="__URL__/searchstock" method="post" name="myform" id="myform" onsubmit="return checkbox();">
                         <tr>
@@ -26,6 +103,7 @@
                         </tr>
                     </form>
     </table>
+</div>
 <div>
     <if condition="$result neq null">
         <table width="774" border="0" align="center" >
@@ -378,7 +456,15 @@
         </td>
     </tr>
 </table>
-
+<div id="last">
+    <hr width="100%" color=#987cb9 SIZE=3>
+    <a href="#">关于我们</a> -
+    <a href="#">广告合作</a> -
+    <a href="#">联系我们</a> -
+    <a href="#">免责声明</a> -
+    <a href="#">投诉建议</a>
+    <p><strong>&copy;CopyRight  浙江大学2014级GIS 版权所有</strong></p>
+</div>
         <script type="text/javascript">
             function checkbox(){
                 value = document.getElementById('stock').value;

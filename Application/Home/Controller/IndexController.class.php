@@ -5,7 +5,7 @@ class IndexController extends Controller {
 	function _initialize(){
 		header("Content-type:text/html;charset=utf-8");
 		if(!isset($_SESSION['username']) || $_SESSION['username']==''){
-				$this->redirect('Login/login');
+				$this->redirect('Stock/search');
 				//$this->error('您还没有登录', U('Login/login'));
 		}else {		//判断当前登录用户是否有资金账户存在，不然不允许其进入系统
 			$personalAccount = M('personal_stock_account');
@@ -15,13 +15,13 @@ class IndexController extends Controller {
 			//var_dump($personalAccount_info);
 			if (!$personalAccount_info){
 				session_destroy();
-				$this->error('您还没有资金账户', U('Login/login'));
+				$this->error('您还没有资金账户', U('Stock/search'));
 			}
 		}
 	}
 
 	function index(){	
-		$this->redirect('showPersonalAccount');
+		$this->redirect('Stock/search');
 	}
 
 	function check_stockholder(){
@@ -71,6 +71,29 @@ class IndexController extends Controller {
 		if (empty($_POST['commission_account']))
 			$this->error('委托数量不能为空');
 
+		$base = new BaseController();
+		switch($base->getTimestate())
+		{
+			case 0:
+				$this->error("系统未开盘！");break;
+			case 3:
+				$this->error("集合竞价系统处理阶段，无法下单！");break;
+		}
+		
+		//读取开盘价格，确定集合竞价时间
+		$stock_price = M('price');
+		$condition1['stockid'] = $_POST['stockid'];
+		$stock_price_info = $stock_price->where($condition1)->find();
+		$price2 = $_POST['commission_price'];
+		$up = $stock_price_info["open_close_price"]*1.1;
+		$down = $stock_price_info["open_close_price"]*0.9;
+		if($price2>$up or $price2<$down)
+		{
+			$this->error("请输入合理价格，合理价格为开盘价的10%左右波动".$up."元是上限,".$down."元是下限");
+			//var_dump($stockinfo);
+		}
+		
+		
 		$stockholder = M('stockholder');
 		$condition['userid'] =  $_SESSION['userid'];
 		$sh = $stockholder->where($condition)->find();
@@ -101,9 +124,19 @@ class IndexController extends Controller {
 		$commission = M('commission');
 		if (!$commission->add($data))
 			$this->error("下单失败");
-
-		$this->success("下单成功", U("Index/buyStock"));
+		else{
+			$this->success("下单成功", U("Index/buyStock"));
+			$infoSync = new InfosyncController();
+			$infoSync->buyerAccountUpdateOnBuy($sh["stockholderid"], $_POST['commission_price']*$_POST['commission_account']);
+		}
+		if($base->getTimestate()==4)
+		{
+			$continue_auction = new ContinueauctionController($data,$commissionid);
+			$continue_auction->continueAuction();
+		}
+		
 	}
+	
 
 	function addSell(){	//卖出股票逻辑代码，实际修改数据库
 		//和买入一样，首先进行一系列验证
@@ -120,10 +153,33 @@ class IndexController extends Controller {
 		if (empty($_POST['commission_account']))
 			$this->error('委托数量不能为空');
 
+		$stock_price = M('price');
+		//读取开盘价格，确定集合竞价时间
+		$condition_stock_1['stockid'] = $_POST['stockid'];
+		$stock_price_info = $stock_price->where($condition_stock_1)->find();
+		$price2 = $_POST['commission_price'];
+		$up = $stock_price_info["open_close_price"]*1.1;
+		$down = $stock_price_info["open_close_price"]*0.9;
+		if($price2>$up or $price2<$down)
+		{
+			$this->error("请输入合理价格，合理价格为开盘价的10%左右波动".$up."元是上限,".$down."元是下限");
+			//var_dump($stockinfo);
+		}
+		
 		$stockholder = M('stockholder');
 		$condition['userid'] =  $_SESSION['userid'];
 		$sh = $stockholder->where($condition)->find();
 
+		$base = new BaseController();
+		switch($base->getTimestate())
+		{
+			case 0:
+				$this->error("系统未开盘！");break;
+			case 3:
+				$this->error("集合竞价系统处理阶段，无法下单！");break;
+		}
+		
+		
 		$hold = M('hold_stock_info');
 		$condition_hold['stockholderid'] = $sh['stockholderid'];
 		$hold_info = $hold->join('stock_stock on stock_hold_stock_info.stockid = stock_stock.code')->where($condition_hold)->find();
@@ -149,6 +205,12 @@ class IndexController extends Controller {
 			$this->error("下单失败");
 
 		$this->success("下单成功", U("Index/sellStock"));
+		
+		if($base->getTimestate()==4)
+		{
+			$continue_auction = new ContinueauctionController($data,$id);
+			$continue_auction->continueAuction();
+		}
 	}
 
 	function revoke(){	//撤单界面，查询所有state=2的委托记录，即已提交记录
@@ -196,7 +258,18 @@ class IndexController extends Controller {
 	
 	function doRevoke(){	//实际撤销逻辑代码
 		$this->check_stockholder();
-
+		
+		$base = new BaseController();
+		switch($base->getTimestate())
+		{
+			case 0:
+				$this->error("系统未开盘！");break;
+			case 2:
+				$this->error("集合竞价第二阶段9:20——9:25，无法撤单！");break;
+			case 3:
+				$this->error("集合竞价系统处理阶段，无法撤单！");break;
+		}
+		
 		//当用户点击撤销按钮的时候，用GET方法向服务器发送icommissiond信息
 		$commissionid = $_GET['commissionid'];
 		
